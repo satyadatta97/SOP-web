@@ -1,0 +1,516 @@
+<body class="sb-nav-fixed">
+    <!--Layout Sidenav Content-->
+    <section id="layoutSidenav_content">
+        <!--Main-->
+        <main class="content-padding1">
+            <!--Container Fluid-->
+            <div class="container-fluid">
+                <!--Page Content-->
+                <div class="page-content">
+                    <!--Page Header-->
+                    <div class="page-header border-bottom-dark">
+                        <!--row-->
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-12">
+                                <h5 class="font-weight-bold mb-0">Inventory Visibility</h5>
+                            </div>
+                            <!-- <div
+                                class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-5 d-flex justify-content-end align-items-center mt-3">
+
+                                <input class="form-control form-control-borderless src_fild rounded-lg mr-3" type="search" placeholder="Search here">
+                                   <label class="custom-file-upload btn btn-outline-danger mr-2 d-flex align-items-center">
+                                    <i class="fa fa-arrow-down mr-2" aria-hidden="true"></i> Import
+                                    <input type="file" name="file" accept=".csv,.xlsx" (change)="selectFile($event)" />
+                                </label>
+                                 
+                                <button type="button" class="btn btn-outline-danger mr-2 d-flex align-items-center">
+                                    <i class="fa fa-arrow-up mr-2" aria-hidden="true"></i>Export</button>
+                                <button [routerLink]="['/features/new']" class="btn btn-danger btn-create p-0 m-0 d-flex align-items-center justify-content-center"
+                                    type="submit"> 
+                                    <img src="./assets/img/plus.svg" class="m-16">
+                                 </button>
+
+                            </div> -->
+
+                        </div>
+                        <!--End row-->
+                    </div>
+                    <!--End Page Header-->
+
+                    <div class="blog-post">
+                      
+                       
+                        <div class="text-right mt-1">
+                            <button type="submit" id="save-entity" class="btn btn-md bg-green mr-4">
+                                <span>
+                                    <i class="fa fa-floppy-o mr-2" aria-hidden="true"></i>Save</span>
+                            </button>
+                            <button type="button" id="cancel-save" class="btn btn-md bg-red">
+                                <span>
+                                    <i class="fa fa-times mr-2" aria-hidden="true"></i>Clear</span>
+                            </button>
+                          
+                        </div>
+                                <div class="row mr-5 loginsrn mt-1">
+                                    <div class="col-lg-3 col-md-4 col-xl-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Inventory Week
+                                                        </td>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            23-01-2021
+                                                            <!-- <input type="date" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" /> -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Location
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Category
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Brand
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Product
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Notes
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="border-none" id="field_name" placeholder="Yes" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                
+                                                   
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                       
+                                      
+                                    </div>
+                                  
+                                    <div class="col-lg-9 col-md-8 col-xl-10">
+                                      
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Location Code</th>
+                                                        <th scope="col">Location Description</th>
+                                                        <th scope="col">Product Code</th>
+                                                        <th scope="col">Product Description</th>
+                                                        <th scope="col">Source Loc</th>
+                                                        <th scope="col">On Hand</th>
+                                                        <th scope="col">On Order</th>
+                                                        <th scope="col">Committed</th>
+                                                        <th scope="col">Available</th>
+                                                        <th scope="col">Avg Sales</th>
+                                                        <th scope="col">Cover Base</th>
+                                                        <th scope="col">Comments</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td>10</td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td>76</td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td>25</td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td>46</td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td>22</td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                   
+                                                  
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+    
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+    
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+    
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+    
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>SL-0123</td>
+                                                        <td>91</td>
+                                                        <td></td>
+                                                        <td>36</td>
+                                                        <td>55</td>
+                                                        <td>20</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                    </tr>
+    
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                              
+                      
+                        <div class="clearfix"></div>
+
+
+
+
+                    </div>
+                    <!--End Page Content-->
+
+                </div>
+                <!-- End DataTales Start -->
+
+            </div>
+            <!--End ontainer Fluid-->
+        </main>
+        <!--End Main-->
+
+    </section>
+    <!--End Layout Sidenav Content-->
+
+</body>
+

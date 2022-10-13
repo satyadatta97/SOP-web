@@ -1,0 +1,111 @@
+<body class="sb-nav-fixed">
+    <!--Layout Sidenav Content-->
+    <section id="layoutSidenav_content">
+        <!--Main-->
+        <main class="content-padding1">
+            <!--Container Fluid-->
+            <div class="container-fluid">
+                <!--Page Content-->
+                <div class="page-content">
+                    <!--Page Header-->
+                    <div class="page-header border-bottom-dark">
+                        <!--row-->
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-12">
+                                <h5 class="font-weight-bold mb-0">Consensus Planner</h5>
+                            </div>
+
+                        </div>
+                        <!--End row-->
+                    </div>
+                    <!--End Page Header-->
+
+                    <div class="blog-post">
+
+                        <div class="table-responsive my-2">
+                            <table class="table table-bordered ">
+                                <tbody>
+                                    <tr>
+                                        <td class="bg-theme-primary text-white vertical-center" colspan="1">
+                                            Scenario Name
+                                        </td>
+                                        <td colspan="11">
+                                            <select class="form-control w-fit" name="Channel">
+                                                <option value="all">December 2021 S&OP Plan</option>
+                                                <option value="1">January 2022 S&OP Plan</option>
+                                                <option value="2">February 2022 S&OP Plan</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="active-vehicals-content mt-2 role-description">
+                            <div class="tab-slider--nav">
+                                <!-- "sc-tabs" this class use when tabs need equal width-->
+                                <ul class="nav nav-tabs sc-tabs">
+                                    <li class="nav-item each-tab-slider active" [class.active]="viewMode == 'tab1'"
+                                        rel="tab1" (click)="viewMode ='tab1'">Demand Plan</li>
+                                    <li class="nav-item each-tab-slider" [class.active]="viewMode == 'tab2'" rel="tab2"
+                                        (click)="viewMode ='tab2'">Revenue Plan</li>
+                                    <li class="nav-item each-tab-slider" [class.active]="viewMode == 'tab3'" rel="tab3"
+                                        (click)="viewMode ='tab3'">Inventory Plan</li>
+                                    <li class="nav-item each-tab-slider" [class.active]="viewMode == 'tab4'" rel="tab4"
+                                        (click)="viewMode ='tab4'">Resource Plan</li>
+
+                                </ul>
+                            </div>
+                            <div class="" [ngSwitch]="viewMode">
+                                <div id="tab1" class="each-tab-slider-content mt-3" *ngSwitchCase="'tab1'">
+                                    <app-demand-plan></app-demand-plan>
+                                </div>
+                                <div id="tab2" class="each-tab-slider-content mt-3" *ngSwitchCase="'tab2'">
+                                    <app-revenue-plan></app-revenue-plan>
+                                </div>
+                                <div id="tab3" class="each-tab-slider-content mt-3" *ngSwitchCase="'tab3'">
+                                    <app-inventory-plan></app-inventory-plan>
+                                </div>
+                                <div id="tab4" class="each-tab-slider-content mt-3" *ngSwitchCase="'tab4'">
+                                    <app-resource-plan></app-resource-plan>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="clearfix"></div>
+
+
+
+
+                    </div>
+                    <!--End Page Content-->
+
+                </div>
+                <!-- End DataTales Start -->
+
+            </div>
+            <!--End ontainer Fluid-->
+        </main>
+        <!--End Main-->
+
+    </section>
+    <!--End Layout Sidenav Content-->
+
+</body>

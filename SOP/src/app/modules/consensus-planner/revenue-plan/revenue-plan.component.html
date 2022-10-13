@@ -1,0 +1,915 @@
+<div class="inv-upper-sec d-flex align-items-center justify-content-between">
+    <div class="selection-sec d-flex align-items-center justify-content-between w-85">
+        <div class="left d-flex align-items-center">
+           <div class="each-cell">
+               <p>Class</p>
+           </div>
+           <div class="each-cell">
+            <select class="h-25" name="Channel">
+                <option value="all">All</option>
+                <option value="1">B</option>
+                <option value="2">C</option>
+            </select>
+           </div>
+           <div class="each-cell">
+            <p>Currency</p>
+        </div>
+        <div class="each-cell">
+            <select class="h-25" name="Channel">
+                <option value="all">USD</option>
+                <option value="1">INR</option>
+                <option value="2">POUND</option>
+            </select>
+        </div>
+        <div class="each-cell">
+            <p>Units</p>
+        </div>
+        <div class="each-cell">
+            <select class="h-25" name="Channel">
+                <option value="all">Pallets</option>
+                <option value="1">INR</option>
+                <option value="2">POUND</option>
+            </select>
+        </div>
+        </div>
+        <div class="right d-flex align-items-center">
+            <div class="each-cell">
+               <i class="fa fa-pencil" aria-hidden="true"></i>
+            </div>
+            <div class="each-cell">
+               <i class="fa fa-gear" aria-hidden="true"></i>
+             </div>
+        </div>
+    </div>
+    <div class="text-right">
+        <button type="submit" id="save-entity" class="btn btn-md bg-green mr-4">
+            <span>
+                <i class="fa fa-floppy-o mr-2" aria-hidden="true"></i>Save</span>
+        </button>
+        <button type="button" id="cancel-save" class="btn btn-md bg-red">
+            <span>
+                <i class="fa fa-times mr-2" aria-hidden="true"></i>Clear</span>
+        </button>
+      
+    </div>
+</div>
+<div class="table-responsive mt-4 border-top-thin">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" rowspan="3" class="vis-hid" colspan="2">Capacity Projections</th>
+                <th scope="col" colspan="8" class="text-center">Actual</th>
+                <th scope="col" colspan="4" class="text-center">Forecast</th>
+                <th scope="col" colspan="1" class="text-center">Forecast</th>
+                <th scope="col" colspan="4" class="text-center color-text-primary">FY-2023</th>
+            </tr>
+            <tr>
+                <th scope="col" colspan="8" class="text-center">FY-2022</th>
+                <th scope="col" colspan="4" class="text-center">FY-2022</th>
+                <th scope="col" colspan="1" class="text-center">FY-2022</th>
+                <th scope="col" colspan="4" class="text-center color-text-primary">FY-2023</th>
+            </tr>
+            <tr>
+                <th scope="col">Jan</th>
+                <th scope="col">Feb</th>
+                <th scope="col">Mar</th>
+                <th scope="col">Apr</th>
+                <th scope="col">May</th>
+                <th scope="col">Jun</th>
+                <th scope="col">Jul</th>
+                <th scope="col">Aug</th>
+
+                <th scope="col">Sep</th>
+                <th scope="col">Oct</th>
+                <th scope="col">Nov</th>
+                <th scope="col">Dec</th>
+                <th scope="col">YearTotal</th>
+                <th scope="col">Jan</th>
+                <th scope="col">Feb</th>
+                <th scope="col">Mar</th>
+                <th scope="col">Apr</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="6">4310-Product Revenue</td>
+            <td><b>Laptops</b></td>
+            <td><b>1,891,045</b></td>
+            <td><b>1,939,072</b></td>
+            <td><b>1,836,041</b></td>
+            <td><b>1,641,042</b></td>
+            <td><b>5,991,072</b></td>
+            <td><b>6,998,152</b></td>
+            <td><b>13,891,072</b></td>
+            <td><b>10,891,064</b></td>
+            <td><b>11,891,048</b></td>
+            <td><b>10,891,034</b></td>
+            <td><b>12,891,046</b></td>
+            <td><b>14,891,078</b></td>
+            <td><b>13,891,012</b></td>
+            <td><b>16,891,076</b></td>
+            <td><b>18,891,084</b></td>
+            <td><b>19,265,145</b></td>
+            <td><b>19,891,072</b></td>
+          </tr>
+          <tr>
+            <td><b>Tablets</b></td>
+            <td><b>1,42,7037</b></td>
+            <td><b>1,939,072</b></td>
+            <td><b>1,836,041</b></td>
+            <td><b>1,641,042</b></td>
+            <td><b>5,991,072</b></td>
+            <td><b>6,998,152</b></td>
+            <td><b>13,891,072</b></td>
+            <td><b>10,891,064</b></td>
+            <td><b>11,891,048</b></td>
+            <td><b>43,891,034</b></td>
+            <td><b>55,891,046</b></td>
+            <td><b>56,891,078</b></td>
+            <td><b>61,891,012</b></td>
+            <td><b>16,891,076</b></td>
+            <td><b>18,891,084</b></td>
+            <td><b>19,265,145</b></td>
+            <td><b>19,891,072</b></td>
+          </tr>
+          <tr>
+            <td><b>Cable & Switches</b></td>
+            <td><b>16,125</b></td>
+            <td><b>16,745</b></td>
+            <td><b>16,235</b></td>
+            <td><b>16,365</b></td>
+            <td><b>16,426</b></td>
+            <td><b>16,547</b></td>
+            <td><b>16,555</b></td>
+            <td><b>16,612</b></td>
+            <td><b>16,513</b></td>
+            <td><b>16,545</b></td>
+            <td><b>16,726</b></td>
+            <td><b>16,703</b></td>
+            <td><b>16,426</b></td>
+            <td><b>16,703</b></td>
+            <td><b>16,703</b></td>
+            <td><b>16,426</b></td>
+            <td><b>16,703</b></td>
+          </tr>
+           
+         <tr>
+          <td><b>Display Monitrs</b></td>
+          <td><b>891,045</b></td>
+          <td><b>939,072</b></td>
+          <td><b>836,041</b></td>
+          <td><b>641,042</b></td>
+          <td><b>991,072</b></td>
+          <td><b>998,152</b></td>
+          <td><b>891,072</b></td>
+          <td><b>791,064</b></td>
+          <td><b>491,048</b></td>
+          <td><b>691,034</b></td>
+          <td><b>891,046</b></td>
+          <td><b>491,078</b></td>
+          <td><b>391,012</b></td>
+          <td><b>691,076</b></td>
+          <td><b>891,084</b></td>
+          <td><b>265,145</b></td>
+          <td><b>891,072</b></td>
+        </tr>
+        <tr>
+          <td><b>New Inventory Items</b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b>238,048</b></td>
+          <td><b>347,034</b></td>
+          <td><b>564,046</b></td>
+          <td><b>597,078</b></td>
+          <td><b>456,012</b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+          <td><b></b></td>
+        </tr>
+        <tr>
+          <td><b>Total Inventory Items</b></td>
+          <td><b>4,891,045</b></td>
+          <td><b>4,939,072</b></td>
+          <td><b>4,836,041</b></td>
+          <td><b>4,641,042</b></td>
+          <td><b>15,991,072</b></td>
+          <td><b>16,998,152</b></td>
+          <td><b>19,891,072</b></td>
+          <td><b>17,891,064</b></td>
+          <td><b>19,891,048</b></td>
+          <td><b>14,891,034</b></td>
+          <td><b>14,891,046</b></td>
+          <td><b>16,891,078</b></td>
+          <td><b>18,891,012</b></td>
+          <td><b>14,891,076</b></td>
+          <td><b>16,891,084</b></td>
+          <td><b>19,265,145</b></td>
+          <td><b>20,891,072</b></td>
+        </tr>
+
+        <tr>
+          <td>Cost of Sales</td>
+          <td><b>Total Inventory Items</b></td>
+          <td><b>2,891,045</b></td>
+          <td><b>2,939,072</b></td>
+          <td><b>2,836,041</b></td>
+          <td><b>2,641,042</b></td>
+          <td><b>2,991,072</b></td>
+          <td><b>6,998,152</b></td>
+          <td><b>12,891,046</b></td>
+          <td><b>14,891,078</b></td>
+          <td><b>13,891,012</b></td>
+          <td><b>16,891,076</b></td>
+          <td><b>18,891,084</b></td>
+          <td><b>19,265,145</b></td>
+          <td><b>19,891,072</b></td>
+          <td><b>13,891,072</b></td>
+          <td><b>10,891,064</b></td>
+          <td><b>11,891,048</b></td>
+          <td><b>10,891,034</b></td>
+        </tr>
+        <tr>
+          <td>Gross Profit</td>
+          <td><b>Total Inventory Items</b></td>
+          <td><b>1,891,045</b></td>
+          <td><b>1,939,072</b></td>
+          <td><b>1,836,041</b></td>
+          <td><b>1,641,042</b></td>
+          <td><b>1,991,072</b></td>
+          <td><b>4,998,152</b></td>
+          <td><b>5,891,046</b></td>
+          <td><b>5,891,078</b></td>
+          <td><b>6,891,075</b></td>
+          <td><b>6,891,076</b></td>
+          <td><b>7,891,084</b></td>
+          <td><b>8,265,145</b></td>
+          <td><b>9,891,045</b></td>
+          <td><b>10,891,054</b></td>
+          <td><b>10,891,064</b></td>
+          <td><b>11,891,048</b></td>
+          <td><b>13,891,034</b></td>
+        </tr>
+        <tr>
+          <td rowspan="6">Product Profit Margin %</td>
+          <td><b>Laptops</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>30.2%</b></td>
+          <td><b>30.4%</b></td>
+          <td><b>29.7%</b></td>
+          <td><b>22.8%</b></td>
+          <td><b>20.6%</b></td>
+          <td><b>19.4%</b></td>
+          <td><b>14.4%</b></td>
+          <td><b>13.8%</b></td>
+          <td><b>13.6%</b></td>
+          <td><b>13.3%</b></td>
+          <td><b>13.0%</b></td>
+        </tr>
+        <tr>
+          <td><b>Tablets</b></td>
+          <td><b>Laptops</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>30.2%</b></td>
+          <td><b>30.4%</b></td>
+          <td><b>29.7%</b></td>
+          <td><b>22.8%</b></td>
+          <td><b>20.6%</b></td>
+          <td><b>19.4%</b></td>
+          <td><b>14.4%</b></td>
+          <td><b>13.8%</b></td>
+          <td><b>13.6%</b></td>
+          <td><b>13.3%</b></td>
+          
+        </tr>
+        <tr>
+          <td><b>Cable & Switches</b></td>
+          <td><b>Laptops</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>36.8%</b></td>
+          <td><b>30.2%</b></td>
+          <td><b>30.4%</b></td>
+          <td><b>29.7%</b></td>
+          <td><b>22.8%</b></td>
+          <td><b>20.6%</b></td>
+          <td><b>19.4%</b></td>
+          <td><b>14.4%</b></td>
+          <td><b>13.8%</b></td>
+          <td><b>13.6%</b></td>
+          <td><b>13.3%</b></td>
+        </tr>
+         
+       <tr>
+        <td><b>Display Monitrs</b></td>
+        <td><b>Laptops</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>30.2%</b></td>
+        <td><b>30.4%</b></td>
+        <td><b>29.7%</b></td>
+        <td><b>22.8%</b></td>
+        <td><b>20.6%</b></td>
+        <td><b>19.4%</b></td>
+        <td><b>14.4%</b></td>
+        <td><b>13.8%</b></td>
+        <td><b>13.6%</b></td>
+        <td><b>13.3%</b></td>
+      </tr>
+      <tr>
+        <td><b>New Inventory Items</b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b>66.7%</b></td>
+        <td><b>74.9%</b></td>
+        <td><b>66.7%</b></td>
+        <td><b>74.1%</b></td>
+        <td><b>40.8%</b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+        <td><b></b></td>
+      </tr>
+      <tr>
+        <td><b>Total Inventory Items</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>36.8%</b></td>
+        <td><b>30.2%</b></td>
+        <td><b>30.4%</b></td>
+        <td><b>29.7%</b></td>
+        <td><b>22.8%</b></td>
+        <td><b>20.6%</b></td>
+        <td><b>19.4%</b></td>
+        <td><b>14.4%</b></td>
+        <td><b>13.8%</b></td>
+        <td><b>13.6%</b></td>
+        <td><b>13.3%</b></td>
+        <td><b>13.0%</b></td>
+      </tr>
+    </table>
+
+    <table class="table table-bordered mt-1">
+      
+        <tbody>
+        
+            <tr>
+               <td>Total Operating Expense</td>
+               <td>1,062,500</td>
+               <td>1,018,725</td>
+               <td>1,120,500</td>
+               <td>1,500,000</td>
+               <td>1,162,000</td>
+               <td>1,062,500</td>
+               <td>1,062,500</td>
+               <td>1,062,500</td>
+               <td>1,062,500</td>
+               <td>1,018,725</td>
+               <td>1,120,500</td>
+               <td>1,062,500</td>
+               <td>1,018,725</td>
+               <td>1,120,500</td>
+               <td>962,500</td>
+               <td>862,500</td>
+               <td>962,500</td>
+               <td>956,600</td>
+               <td>862,500</td>
+            </tr>
+            <tr>
+                <td>Operating Margin %</td>
+                <td>18.10%</td>
+                <td>16.28%</td>
+                <td>14.60%</td>
+                <td>16.28%</td>
+                <td>18.10%</td>
+                <td>15.60%</td>
+                <td>19.25%</td>
+                <td>12.38%</td>
+                <td>17.50%</td>
+                <td>16.28%</td>
+                <td>25.23%</td>
+                <td>16.28%</td>
+                <td>17.50%</td>
+                <td>16.28%</td>
+                <td>18.10%</td>
+                <td>16.28%</td>
+                <td>18.10%</td>
+                <td>17.50%</td>
+                <td>15.60%</td>
+             </tr>
+             <tr>
+                <td class="table-cell-green"><b>Net Profit after Taxes (NPAT)</b></td>
+                <td>2,696,181</td>
+                <td>3,054,243</td>
+                <td>2,686,787</td>
+                <td>2,911,805</td>
+                <td>2,696,181</td>
+                <td>3,054,243</td>
+                <td>2,686,787</td>
+                <td>2,911,805</td>
+                <td>2,696,181</td>
+                <td>3,054,243</td>
+                <td>2,686,782</td>
+                <td>2,911,805</td>
+                <td>2,696,181</td>
+                <td>3,044,273</td>
+                <td>2,686,786</td>
+                <td>6,911,805</td>
+                <td>3,696,181</td>
+                <td>4,439,337</td>
+                <td>3,254,364</td>
+             </tr>
+        </tbody>
+    </table>
+</div>
+ <!-- <table class="fold-table">
+    <thead>
+      <tr>
+        <th>Company</th><th>Amount</th><th>Value</th><th>Premiums</th><th>Strategy A</th><th>Strategy B</th><th>Strategy C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="view">
+        <td>Company Name</td>
+        <td class="pcs">457</td>
+        <td class="cur">6535178</td>
+        <td>-</td>
+        <td class="per">50,71</td>
+        <td class="per">49,21</td>
+        <td class="per">0</td>
+      </tr>
+      <tr class="fold">
+        <td colspan="7">
+          <div class="fold-content">
+            <h3>Company Name</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company name</th><th>Customer no</th><th>Customer name</th><th>Insurance no</th><th>Strategy</th><th>Start</th><th>Current</th><th>Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sony</td>
+                  <td>13245</td>
+                  <td>John Doe</td>
+                  <td>064578</td>
+                  <td>A, 100%</td>
+                  <td class="cur">20000</td>
+                  <td class="cur">33000</td>
+                  <td class="cur">13000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>13288</td>
+                  <td>Claire Bennet</td>
+                  <td>064877</td>
+                  <td>B, 100%</td>
+                  <td class="cur">28000</td>
+                  <td class="cur">48000</td>
+                  <td class="cur">20000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>12341</td>
+                  <td>Barry White</td>
+                  <td>064123</td>
+                  <td>A, 100%</td>
+                  <td class="cur">10000</td>
+                  <td class="cur">22000</td>
+                  <td class="cur">12000</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+        </td>
+      </tr>
+      <tr class="view">
+        <td>Company Name</td>
+        <td class="pcs">457</td>
+        <td class="cur">6535178</td>
+        <td>-</td>
+        <td class="per">50,71</td>
+        <td class="per">49,21</td>
+        <td class="per">0</td>
+      </tr>
+      <tr class="fold">
+        <td colspan="7">
+          <div class="fold-content">
+            <h3>Company Name</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company name</th><th>Customer no</th><th>Customer name</th><th>Insurance no</th><th>Strategy</th><th>Start</th><th>Current</th><th>Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sony</td>
+                  <td>13245</td>
+                  <td>John Doe</td>
+                  <td>064578</td>
+                  <td>A, 100%</td>
+                  <td class="cur">20000</td>
+                  <td class="cur">33000</td>
+                  <td class="cur">13000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>13288</td>
+                  <td>Claire Bennet</td>
+                  <td>064877</td>
+                  <td>B, 100%</td>
+                  <td class="cur">28000</td>
+                  <td class="cur">48000</td>
+                  <td class="cur">20000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>12341</td>
+                  <td>Barry White</td>
+                  <td>064123</td>
+                  <td>A, 100%</td>
+                  <td class="cur">10000</td>
+                  <td class="cur">22000</td>
+                  <td class="cur">12000</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+        </td>
+      </tr>
+      <tr class="view">
+        <td>Company Name</td>
+        <td class="pcs">457</td>
+        <td class="cur">6535178</td>
+        <td>-</td>
+        <td class="per">50,71</td>
+        <td class="per">49,21</td>
+        <td class="per">0</td>
+      </tr>
+      <tr class="fold">
+        <td colspan="7">
+          <div class="fold-content">
+            <h3>Company Name</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company name</th><th>Customer no</th><th>Customer name</th><th>Insurance no</th><th>Strategy</th><th>Start</th><th>Current</th><th>Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sony</td>
+                  <td>13245</td>
+                  <td>John Doe</td>
+                  <td>064578</td>
+                  <td>A, 100%</td>
+                  <td class="cur">20000</td>
+                  <td class="cur">33000</td>
+                  <td class="cur">13000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>13288</td>
+                  <td>Claire Bennet</td>
+                  <td>064877</td>
+                  <td>B, 100%</td>
+                  <td class="cur">28000</td>
+                  <td class="cur">48000</td>
+                  <td class="cur">20000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>12341</td>
+                  <td>Barry White</td>
+                  <td>064123</td>
+                  <td>A, 100%</td>
+                  <td class="cur">10000</td>
+                  <td class="cur">22000</td>
+                  <td class="cur">12000</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+        </td>
+      </tr>
+      <tr class="view">
+        <td>Company Name</td>
+        <td class="pcs">457</td>
+        <td class="cur">6535178</td>
+        <td>-</td>
+        <td class="per">50,71</td>
+        <td class="per">49,21</td>
+        <td class="per">0</td>
+      </tr>
+      <tr class="fold">
+        <td colspan="7">
+          <div class="fold-content">
+            <h3>Company Name</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company name</th><th>Customer no</th><th>Customer name</th><th>Insurance no</th><th>Strategy</th><th>Start</th><th>Current</th><th>Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sony</td>
+                  <td>13245</td>
+                  <td>John Doe</td>
+                  <td>064578</td>
+                  <td>A, 100%</td>
+                  <td class="cur">20000</td>
+                  <td class="cur">33000</td>
+                  <td class="cur">13000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>13288</td>
+                  <td>Claire Bennet</td>
+                  <td>064877</td>
+                  <td>B, 100%</td>
+                  <td class="cur">28000</td>
+                  <td class="cur">48000</td>
+                  <td class="cur">20000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>12341</td>
+                  <td>Barry White</td>
+                  <td>064123</td>
+                  <td>A, 100%</td>
+                  <td class="cur">10000</td>
+                  <td class="cur">22000</td>
+                  <td class="cur">12000</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+        </td>
+      </tr>
+      <tr class="view">
+        <td>Company Name</td>
+        <td class="pcs">457</td>
+        <td class="cur">6535178</td>
+        <td>-</td>
+        <td class="per">50,71</td>
+        <td class="per">49,21</td>
+        <td class="per">0</td>
+      </tr>
+      <tr class="fold">
+        <td colspan="7">
+          <div class="fold-content">
+            <h3>Company Name</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company name</th><th>Customer no</th><th>Customer name</th><th>Insurance no</th><th>Strategy</th><th>Start</th><th>Current</th><th>Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sony</td>
+                  <td>13245</td>
+                  <td>John Doe</td>
+                  <td>064578</td>
+                  <td>A, 100%</td>
+                  <td class="cur">20000</td>
+                  <td class="cur">33000</td>
+                  <td class="cur">13000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>13288</td>
+                  <td>Claire Bennet</td>
+                  <td>064877</td>
+                  <td>B, 100%</td>
+                  <td class="cur">28000</td>
+                  <td class="cur">48000</td>
+                  <td class="cur">20000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>12341</td>
+                  <td>Barry White</td>
+                  <td>064123</td>
+                  <td>A, 100%</td>
+                  <td class="cur">10000</td>
+                  <td class="cur">22000</td>
+                  <td class="cur">12000</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+        </td>
+      </tr>
+      <tr class="view">
+        <td>Company Name</td>
+        <td class="pcs">457</td>
+        <td class="cur">6535178</td>
+        <td>-</td>
+        <td class="per">50,71</td>
+        <td class="per">49,21</td>
+        <td class="per">0</td>
+      </tr>
+      <tr class="fold">
+        <td colspan="7">
+          <div class="fold-content">
+            <h3>Company Name</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company name</th><th>Customer no</th><th>Customer name</th><th>Insurance no</th><th>Strategy</th><th>Start</th><th>Current</th><th>Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sony</td>
+                  <td>13245</td>
+                  <td>John Doe</td>
+                  <td>064578</td>
+                  <td>A, 100%</td>
+                  <td class="cur">20000</td>
+                  <td class="cur">33000</td>
+                  <td class="cur">13000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>13288</td>
+                  <td>Claire Bennet</td>
+                  <td>064877</td>
+                  <td>B, 100%</td>
+                  <td class="cur">28000</td>
+                  <td class="cur">48000</td>
+                  <td class="cur">20000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>12341</td>
+                  <td>Barry White</td>
+                  <td>064123</td>
+                  <td>A, 100%</td>
+                  <td class="cur">10000</td>
+                  <td class="cur">22000</td>
+                  <td class="cur">12000</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+        </td>
+      </tr>
+      <tr class="view">
+        <td>Company Name</td>
+        <td class="pcs">457</td>
+        <td class="cur">6535178</td>
+        <td>-</td>
+        <td class="per">50,71</td>
+        <td class="per">49,21</td>
+        <td class="per">0</td>
+      </tr>
+      <tr class="fold">
+        <td colspan="7">
+          <div class="fold-content">
+            <h3>Company Name</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company name</th><th>Customer no</th><th>Customer name</th><th>Insurance no</th><th>Strategy</th><th>Start</th><th>Current</th><th>Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sony</td>
+                  <td>13245</td>
+                  <td>John Doe</td>
+                  <td>064578</td>
+                  <td>A, 100%</td>
+                  <td class="cur">20000</td>
+                  <td class="cur">33000</td>
+                  <td class="cur">13000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>13288</td>
+                  <td>Claire Bennet</td>
+                  <td>064877</td>
+                  <td>B, 100%</td>
+                  <td class="cur">28000</td>
+                  <td class="cur">48000</td>
+                  <td class="cur">20000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>12341</td>
+                  <td>Barry White</td>
+                  <td>064123</td>
+                  <td>A, 100%</td>
+                  <td class="cur">10000</td>
+                  <td class="cur">22000</td>
+                  <td class="cur">12000</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+        </td>
+      </tr>
+      <tr class="view">
+        <td>Company Name</td>
+        <td class="pcs">457</td>
+        <td class="cur">6535178</td>
+        <td>-</td>
+        <td class="per">50,71</td>
+        <td class="per">49,21</td>
+        <td class="per">0</td>
+      </tr>
+      <tr class="fold">
+        <td colspan="7">
+          <div class="fold-content">
+            <h3>Company Name</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company name</th><th>Customer no</th><th>Customer name</th><th>Insurance no</th><th>Strategy</th><th>Start</th><th>Current</th><th>Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sony</td>
+                  <td>13245</td>
+                  <td>John Doe</td>
+                  <td>064578</td>
+                  <td>A, 100%</td>
+                  <td class="cur">20000</td>
+                  <td class="cur">33000</td>
+                  <td class="cur">13000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>13288</td>
+                  <td>Claire Bennet</td>
+                  <td>064877</td>
+                  <td>B, 100%</td>
+                  <td class="cur">28000</td>
+                  <td class="cur">48000</td>
+                  <td class="cur">20000</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>12341</td>
+                  <td>Barry White</td>
+                  <td>064123</td>
+                  <td>A, 100%</td>
+                  <td class="cur">10000</td>
+                  <td class="cur">22000</td>
+                  <td class="cur">12000</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table> 
+   -->

@@ -1,0 +1,61 @@
+<body class="sb-nav-fixed">
+    <!--Layout Sidenav Content-->
+    <section id="layoutSidenav_content">
+        <!--Main-->
+        <main class="content-padding1">
+            <!--Container Fluid-->
+            <div class="container-fluid">
+                <!--Page Content-->
+                <div class="page-content">
+                    <!--Page Header-->
+                    <div class="page-header border-bottom-dark">
+                        <h5 class="pb-0">Product</h5>
+                    </div>
+                    <!--End Page Header-->
+                    <div class="blog-post">
+                        <form class="mt-2" action="" method="post">
+                            <div class="row loginsrn">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Code</label>
+                                        <p class="view-data">{{product.brandCode}}</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Name</label>
+                                        <p class="view-data">{{product.bomLevelDescription}}</p>
+                                    </div>
+                                    <!-- Form Group -->
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                   
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Parent</label>
+                                        <p class="view-data">{{product.promoEligible}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pull-right">
+                                <button type="button" id="cancel-save" class="btn btn-red"
+                                    (click)="previousState()">
+                                    <span><i class="fa fa-arrow-left mr-2"></i>Back</span>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!--End Page Content-->
+                </div>
+                <!-- End DataTales Start -->
+            </div>
+            <!--End ontainer Fluid-->
+        </main>
+        <!--End Main-->
+    </section>
+    <!--End Layout Sidenav Content-->
+</body>

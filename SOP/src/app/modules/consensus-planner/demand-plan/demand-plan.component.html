@@ -1,0 +1,520 @@
+<div class="row">
+    <div class="col-lg-3 col-md-4 col-xl-2">
+        <div class="table-responsive">
+            <table class="table table-bordered mt-1">
+                <tbody>
+                    <tr>
+                        <td class="bg-theme-primary text-white vertical-center">
+                            Channel
+                        </td>
+                        <td>
+                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                formControlName="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-theme-primary text-white vertical-center">
+                            Region
+                        </td>
+                        <td>
+                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                formControlName="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-theme-primary text-white vertical-center">
+                            Category
+                        </td>
+                        <td>
+                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                formControlName="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-theme-primary text-white vertical-center">
+                            Brand
+                        </td>
+                        <td>
+                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                formControlName="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-theme-primary text-white vertical-center">
+                            Size
+                        </td>
+                        <td>
+                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                formControlName="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-theme-primary text-white vertical-center">
+                            Scenario
+                        </td>
+                        <td>
+                            <input type="text" disabled class="  border-none" id="field_name" placeholder="December 2021 S&OP Plan" name="name"
+                                formControlName="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-theme-primary text-white vertical-center">
+                            Unit of Measure
+                        </td>
+                        <td>
+                            <input type="text" disabled class=" border-none" id="field_name" placeholder="Physical class" name="name"
+                                formControlName="name" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mb-4">
+            <textarea class="form-control mt-4 h-261" placeholder="Notes..."></textarea>
+        </div>
+      
+    </div>
+    <div class="col-lg-9 col-md-8 col-xl-10">
+      
+        
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <div class="d-flex align-items-center">
+                <div class="checkbox mb-2 d-flex align-items-center mr-3">
+                    <label class="d-flex align-items-center">
+                        <input type="checkbox" value="" class="mr-2" checked>Previous Forecast
+                    </label>
+                </div>
+                <div class="checkbox mb-2 d-flex align-items-center mr-3">
+                    <label class="d-flex align-items-center">
+                        <input type="checkbox" value="" class="mr-2" checked>Last Year
+                    </label>
+                </div>
+                <div class="checkbox mb-2 d-flex align-items-center mr-3">
+                    <label class="d-flex align-items-center">
+                        <input type="checkbox" value="" class="mr-2" checked>Annual Plan
+                    </label>
+                </div>
+                <div class="checkbox mb-2 d-flex align-items-center mr-3">
+                    <label class="d-flex align-items-center">
+                        <input type="checkbox" value="" class="mr-2" checked>Trend
+                    </label>
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="submit" id="save-entity" class="btn btn-md bg-green mr-4">
+                    <span>
+                        <i class="fa fa-floppy-o mr-2" aria-hidden="true"></i>Save</span>
+                </button>
+                <button type="button" id="cancel-save" class="btn btn-md bg-red">
+                    <span>
+                        <i class="fa fa-times mr-2" aria-hidden="true"></i>Clear</span>
+                </button>
+              
+            </div>
+       </div>
+       
+        <div class="table-responsive">
+            <table class="table table-bordered mt-2">
+                <thead>
+                    <tr>
+                        <th scope="col">Shipments</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Apr</th>
+                        <th scope="col">May</th>
+                        <th scope="col">Jun</th>
+                        <th scope="col">Jul</th>
+                        <th scope="col">Aug</th>
+                        <th scope="col">Sep</th>
+                        <th scope="col">Oct</th>
+                        <th scope="col">Nov</th>
+                        <th scope="col">Dec</th>
+                        <th scope="col">Jan</th>
+                        <th scope="col">Feb</th>
+                        <th scope="col">Mar</th>
+                        <th scope="col">Total(000sCs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Annual Plan</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Statistical</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Sales Forecast</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Overrides</td>
+                        <td>2021</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>80,562</td>
+                        <td></td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td></td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>S&OP Forecast</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>S&OP Forecast-Nov-21</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Orders</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Projected Stock</td>
+                        <td>2021</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered mt-2">
+               
+                <tbody>
+                  
+                    <tr>
+                        <td class="bg-theme-primary text-white">
+                            Trend
+                        </td>
+                      
+                        <td>R3</td>
+                        <td>-8.00%</td>
+                        <td>YTD</td>
+                        <td>-5.10%</td>
+                        <td>R13</td>
+                        <td>-4.70%</td>
+                       
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered mt-2">
+                <thead>
+                    <tr>
+                        <th scope="col">Retail</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Apr</th>
+                        <th scope="col">May</th>
+                        <th scope="col">Jun</th>
+                        <th scope="col">Jul</th>
+                        <th scope="col">Aug</th>
+                        <th scope="col">Sep</th>
+                        <th scope="col">Oct</th>
+                        <th scope="col">Nov</th>
+                        <th scope="col">Dec</th>
+                        <th scope="col">Jan</th>
+                        <th scope="col">Feb</th>
+                        <th scope="col">Mar</th>
+                        <th scope="col">Total(000sCs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Annual Plan</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Statistical</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Sales Forecast</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Overrides</td>
+                        <td>2021</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>80,562</td>
+                        <td></td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td></td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>S&OP Forecast</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>S&OP Forecast-Nov-21</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Orders</td>
+                        <td>2021</td>
+                        <td>84,125</td>
+                        <td>87,738</td>
+                        <td>80,084</td>
+                        <td>61,767</td>
+                        <td>64,053</td>
+                        <td>80,562</td>
+                        <td>90,825</td>
+                        <td>100,825</td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    <tr>
+                        <td>Projected Stock</td>
+                        <td>2021</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>66,825</td>
+                        <td>36,825</td>
+                        <td>52,625</td>
+                        <td>59,468</td>
+                        <td>865</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered mt-2">
+               
+                <tbody>
+                  
+                    <tr>
+                        <td class="bg-theme-primary text-white">
+                            Trend
+                        </td>
+                      
+                        <td>R3</td>
+                        <td>-8.00%</td>
+                        <td>YTD</td>
+                        <td>-5.10%</td>
+                        <td>R13</td>
+                        <td>-4.70%</td>
+                       
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

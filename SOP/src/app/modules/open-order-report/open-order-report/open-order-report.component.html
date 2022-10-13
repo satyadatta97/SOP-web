@@ -1,0 +1,245 @@
+<body class="sb-nav-fixed">
+    <!--Layout Sidenav Content-->
+    <section id="layoutSidenav_content">
+        <!--Main-->
+        <main class="content-padding1">
+            <!--Container Fluid-->
+            <div class="container-fluid">
+                <!--Page Content-->
+                <div class="page-content">
+                    <!--Page Header-->
+                    <div class="page-header border-bottom-dark">
+                        <!--row-->
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-12">
+                                <h5 class="font-weight-bold mb-0">Open Order Report</h5>
+                            </div>
+                            <!-- <div
+                                class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-5 d-flex justify-content-end align-items-center mt-3">
+
+                                <input class="form-control form-control-borderless src_fild rounded-lg mr-3" type="search" placeholder="Search here">
+                                   <label class="custom-file-upload btn btn-outline-danger mr-2 d-flex align-items-center">
+                                    <i class="fa fa-arrow-down mr-2" aria-hidden="true"></i> Import
+                                    <input type="file" name="file" accept=".csv,.xlsx" (change)="selectFile($event)" />
+                                </label>
+                                 
+                                <button type="button" class="btn btn-outline-danger mr-2 d-flex align-items-center">
+                                    <i class="fa fa-arrow-up mr-2" aria-hidden="true"></i>Export</button>
+                                <button [routerLink]="['/features/new']" class="btn btn-danger btn-create p-0 m-0 d-flex align-items-center justify-content-center"
+                                    type="submit"> 
+                                    <img src="./assets/img/plus.svg" class="m-16">
+                                 </button>
+
+                            </div> -->
+
+                        </div>
+                        <!--End row-->
+                    </div>
+                    <!--End Page Header-->
+
+                    <div class="blog-post">
+                      
+                       
+                              
+                                <div class="row mr-5 loginsrn mt-2">
+                                   
+                                   
+                                    <div class="col-lg-3 col-md-4 col-xl-2">
+                                        <div class="table-responsive mt-1">
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Location
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Category
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Brand
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-theme-primary text-white vertical-center">
+                                                            Product
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled class="  border-none" id="field_name" placeholder="All" name="name"
+                                                                formControlName="name" />
+                                                        </td>
+                                                    </tr>
+                                                   
+                                                   
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                       
+                                      
+                                    </div>
+                                    <div class="col-lg-9 col-md-8 col-xl-10">
+                                        <div class="table-responsive mt-1">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Order Date</th>
+                                                        <th scope="col">Location Code</th>
+                                                        <th scope="col">Location Description</th>
+                                                        <th scope="col">Product Code</th>
+                                                        <th scope="col">Product Description</th>
+                                                        <th scope="col">Qty. Ordered</th>
+                                                        <th scope="col">Qty. Revised</th>
+                                                        <th scope="col">Qty. Shipped</th>
+                                                        <th scope="col">Unit Price</th>
+                                                        <th scope="col">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>12-Jan-2021</td>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>100</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>$34,000</td>
+                                                        <td>Open</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>13-Jan-2021</td>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>100</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>$34,000</td>
+                                                        <td>Open</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14-Jan-2021</td>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>100</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>$34,000</td>
+                                                        <td>Open</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>15-Jan-2021</td>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>100</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>$34,000</td>
+                                                        <td>Open</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>16-Jan-2021</td>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>100</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>$34,000</td>
+                                                        <td>Open</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17-Jan-2021</td>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>100</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>$34,000</td>
+                                                        <td>Open</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>18-Jan-2021</td>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>100</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>$34,000</td>
+                                                        <td>Open</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19-Jan-2021</td>
+                                                        <td>LC-021</td>
+                                                        <td>Dallas</td>
+                                                        <td>PC-001121</td>
+                                                        <td>2dr Extended Cab 4WD LB(4.9L 6cyl naturally aspired 4M)</td>
+                                                        <td>100</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>$34,000</td>
+                                                        <td>Open</td>
+                                                    </tr>
+                                                    
+                                                  
+        
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                             
+                               
+                           
+                      
+                        <div class="clearfix"></div>
+
+
+
+
+                    </div>
+                    <!--End Page Content-->
+
+                </div>
+                <!-- End DataTales Start -->
+
+            </div>
+            <!--End ontainer Fluid-->
+        </main>
+        <!--End Main-->
+
+    </section>
+    <!--End Layout Sidenav Content-->
+
+</body>
+
+
