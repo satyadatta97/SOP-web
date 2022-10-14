@@ -1,1 +1,899 @@
-<p>price-calculator works!</p>
+<body class="sb-nav-fixed">
+    <!--Layout Sidenav Content-->
+    <section id="layoutSidenav_content">
+        <!--Main-->
+        <main class="content-padding1">
+            <!--Container Fluid-->
+            <div class="container-fluid">
+                <!--Page Content-->
+                <div class="page-content">
+                    <!--Page Header-->
+                    <div class="page-header border-bottom-dark">
+                        <!--row-->
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-12">
+                                <h5 class="font-weight-bold mb-0">Price Calculator</h5>
+                            </div>
+
+                        </div>
+                        <!--End row-->
+                    </div>
+                    <!--End Page Header-->
+
+                    <div class="blog-post">
+
+
+
+                        <div class="loginsrn mt-2">
+
+                            <div class="row mb-2 mt-3">
+                                <div class="col-lg-2 col-md-3">
+                                    <div class="form-group mb-2 d-flex align-items-center">
+                                        <label class="mb-2 w-50">Channel</label>
+                                        <select class="form-control h-25" name="Channel">
+                                            <option value="all">All</option>
+                                            <option value="1">Channel-1</option>
+                                            <option value="2">Channel-2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3">
+                                    <div class="form-group mb-2 d-flex align-items-center">
+                                        <label class="mb-2 w-50">Category</label>
+                                        <select class="form-control h-25" name="Channel">
+                                            <option value="all">All</option>
+                                            <option value="1">Category-1</option>
+                                            <option value="2">Category-2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3">
+                                    <div class="form-group mb-2 d-flex align-items-center">
+                                        <label class="mb-2 w-50">Brand</label>
+                                        <select class="form-control h-25" name="Channel">
+                                            <option value="all">All</option>
+                                            <option value="1">Brand-1</option>
+                                            <option value="2">Brand-2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3">
+                                    <div class="form-group mb-2 d-flex align-items-center">
+                                        <label class="mb-2 w-50">Region</label>
+                                        <select class="form-control h-25" name="Channel">
+                                            <option value="all">All</option>
+                                            <option value="1">Region-1</option>
+                                            <option value="2">Region-2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-lg-2 col-md-3">
+                                    <div class="form-group mb-2 d-flex align-items-center">
+                                        <label class="mb-2 w-50">Customer</label>
+                                        <select class="form-control h-25" name="Channel">
+                                            <option value="all">All</option>
+                                            <option value="1">Customer-1</option>
+                                            <option value="2">Customer-2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3">
+                                    <div class="form-group mb-2 d-flex align-items-center">
+                                        <label class="mb-2 w-50">Class</label>
+                                        <select class="form-control h-25" name="Channel">
+                                            <option value="all">A</option>
+                                            <option value="1">B</option>
+                                            <option value="2">C</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3">
+                                    <div class="form-group mb-2 d-flex align-items-center">
+                                        <label class="mb-2 w-50">Currency</label>
+                                        <select class="form-control h-25" name="Channel">
+                                            <option value="all">USD</option>
+                                            <option value="1">INR</option>
+                                            <option value="2">POUND</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-3 d-flex justify-content-end">
+                                    <div>
+                                        <button class="btn mr-2 btn-outline-success btn-rel" (click)="open(content)">
+                                            <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+                                            <span class="btn-abs">Edit</span>
+                                        </button>
+                                        <button class="btn mr-2 btn-outline-success btn-rel">
+                                            <i class="fa fa-gear fa-lg" aria-hidden="true"></i>
+                                            <span class="btn-abs">More</span>
+                                        </button>
+                                        <button class="btn mr-2 btn-outline-success btn-rel">
+                                            <i class="fa fa-floppy-o fa-lg" aria-hidden="true"></i>
+                                            <span class="btn-abs">Save</span>
+                                        </button>
+                                        <button class="btn mr-2 btn-outline-success btn-rel">
+                                            <i class="fa fa-refresh fa-lg" aria-hidden="true"></i>
+                                            <span class="btn-abs">Clear</span>
+                                        </button>
+
+                                        <ng-template #content let-modal>
+                                            <div class="modal-header py-3">
+                                                <h5 class="modal-title font-md font-weight-md" id="modal-basic-title">
+                                                    Apply Tactic</h5>
+                                                <button type="button" class="btn-close" aria-label="Close"
+                                                    (click)="modal.dismiss('Cross click')"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group mb-2 d-flex align-items-center">
+                                                        <p class="mb-2 w-50">Price Tactic</p>
+                                                        <select class="form-control h-25" name="Channel">
+                                                            <option value="all">+$2</option>
+                                                            <option value="1">+$4</option>
+                                                            <option value="2">+$6</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group mb-2 d-flex align-items-center">
+                                                        <p class="mb-2 w-50">Benchmark SKU</p>
+                                                        <select class="form-control h-25" name="Channel">
+                                                            <option value="all">Pepsi 500 ml</option>
+                                                            <option value="1">Slice 500 ml</option>
+                                                            <option value="2">Mirinda 500 ml</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="range">
+                                                        <h6 class="font-weight-md mb-2">Range</h6>
+                                                        <div class="radio mb-1">
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="radio" name="optionsRadios" class="mr-2"
+                                                                    checked>
+                                                                <span class="font-weight-lt">Entire Range</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio mb-1">
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="radio" name="optionsRadios"
+                                                                    id="optionsRadios2" value="option2" class="mr-2">
+                                                                <span class="mr-2 font-weight-lt">Period Forms</span>
+                                                                <input type="text" placeholder="16">
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio mb-2">
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="radio" name="optionsRadios"
+                                                                    id="optionsRadios2" value="option2" class="mr-2">
+                                                                <span class="mr-2 font-weight-lt">Period Between</span>
+                                                                <input type="text" placeholder="16" class="mr-2">
+                                                                <span class="mr-2 font-weight-lt">And</span> <input
+                                                                    type="text" placeholder="16">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="range mt-3">
+                                                        <h6 class="font-weight-md mb-2">Selection</h6>
+                                                        <div class="radio mb-2">
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="radio" name="optionsRadios"
+                                                                    id="optionsRadios2" value="option2" class="mr-2"
+                                                                    checked>
+                                                                <span class="font-weight-lt">Currently Selected</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio mb-2">
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="radio" name="optionsRadios"
+                                                                    id="optionsRadios2" value="option2" class="mr-2">
+                                                                <span class="font-weight-lt">All on Form</span>
+                                                            </label>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                                <button type="button" class="btn btn-outline-dark mr-2"
+                                                    (click)="modal.close('Save click')">Cancel</button>
+                                                <button type="button" class="btn btn-dark"
+                                                    (click)="modal.close('Save click')">Apply</button>
+                                            </div>
+                                        </ng-template>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="table-responsive mt-1">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2">Channel</th>
+                                            <th scope="col" rowspan="2">Product</th>
+                                            <th scope="col" rowspan="2">Location</th>
+                                            <th scope="col" rowspan="2">Customer</th>
+                                            <th scope="col" rowspan="2">Price Tactic</th>
+                                            <th scope="col" rowspan="2">Benchmark</th>
+                                            <th scope="col" colspan="3" class="text-center">FY-2020</th>
+                                            <th scope="col" colspan="3" class="text-center">FY-2021</th>
+                                            <th scope="col" colspan="12" class="text-center">FY-2022</th>
+                                            <th scope="col" colspan="12" class="text-center">FY-2023</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Avg. Price</th>
+                                            <th scope="col">Min. Price</th>
+                                            <th scope="col">Max. Price</th>
+                                            <th scope="col">Avg. Price</th>
+                                            <th scope="col">Min. Price</th>
+                                            <th scope="col">Max. Price</th>
+                                            <th scope="col">Jan</th>
+                                            <th scope="col">Feb</th>
+                                            <th scope="col">Mar</th>
+                                            <th scope="col">Apr</th>
+                                            <th scope="col">May</th>
+                                            <th scope="col">Jun</th>
+                                            <th scope="col">Jul</th>
+                                            <th scope="col">Aug</th>
+                                            <th scope="col">Sep</th>
+                                            <th scope="col">Oct</th>
+                                            <th scope="col">Nov</th>
+                                            <th scope="col">Dec</th>
+                                            <th scope="col">Jan</th>
+                                            <th scope="col">Feb</th>
+                                            <th scope="col">Mar</th>
+                                            <th scope="col">Apr</th>
+                                            <th scope="col">May</th>
+                                            <th scope="col">Jun</th>
+                                            <th scope="col">Jul</th>
+                                            <th scope="col">Aug</th>
+                                            <th scope="col">Sep</th>
+                                            <th scope="col">Oct</th>
+                                            <th scope="col">Nov</th>
+                                            <th scope="col">Dec</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="">Online</td>
+                                            <td class="">Coke 750ml</td>
+                                            <td class="">Hyderabad</td>
+                                            <td class="">Product-01</td>
+                                            <td class="">20% Higher</td>
+                                            <td class="">Coke 500 ml</td>
+                                            <td class="price-cell-bg">57</td>
+                                            <td class="price-cell-bg">51</td>
+                                            <td class="price-cell-bg">59</td>
+                                            <td class="price-cell-bg">52</td>
+                                            <td class="price-cell-bg">50</td>
+                                            <td class="price-cell-bg">57</td>
+                                            <td class="price-cell-bg">53</td>
+                                            <td class="price-cell-bg">59</td>
+                                            <td class="price-cell-bg">59</td>
+                                            <td>60</td>
+                                            <td>60</td>
+                                            <td>60</td>
+                                            <td>60</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>59</td>
+                                            <td>60</td>
+                                            <td>60</td>
+                                            <td>60</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                            <td>57</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vis-hid">20</td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class=""></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td class="price-cell-bg"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                        <div class="clearfix"></div>
+
+
+
+
+                    </div>
+                    <!--End Page Content-->
+
+                </div>
+                <!-- End DataTales Start -->
+
+            </div>
+            <!--End ontainer Fluid-->
+        </main>
+        <!--End Main-->
+
+    </section>
+    <!--End Layout Sidenav Content-->
+
+</body>

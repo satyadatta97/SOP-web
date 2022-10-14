@@ -70,6 +70,11 @@ const routes: Routes = [];
         path:'location',
         loadChildren: ()=>
         import('./modules/location/location.module').then((m) => m.LocationModule)
+      },
+      {
+        path:'price-calculator',
+        loadChildren: ()=>
+        import('./modules/price-calculator/price-calculator.module').then((m) => m.PriceCalculatorModule)
       }
     ]
   )],
