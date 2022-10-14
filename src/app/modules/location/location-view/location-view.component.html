@@ -1,5 +1,4 @@
 <body class="sb-nav-fixed">
-
     <!--Layout Sidenav Content-->
     <section id="layoutSidenav_content">
         <!--Main-->
@@ -10,10 +9,8 @@
                 <div class="page-content">
                     <!--Page Header-->
                     <div class="page-header border-bottom-dark">
+                        <h5 class="mb-0">Location</h5>
 
-                        <h5 class="font-weight-bold mb-0">Location</h5>
-
-                        <!--End row-->
                     </div>
                     <!--End Page Header-->
 
@@ -24,151 +21,176 @@
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                     <!-- Form Group -->
                                     <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Location Name :</label>
-                                       
-                                        <p class="view-data">{{location.name}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Address :</label>
-                                       
-                                        <p class="view-data">{{location.address}}</p>
-                                    </div>
-                                    <!-- Form Group -->
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Type :</label>
-                                       
-                                        <p class="view-data">{{location.locationTypeName}}</p>
+                                        <label for="username" class="mb-2">Name</label>
+                                        <p class="view-data">Hyderabad</p>
                                     </div>
 
+                                </div>
+                                <!-- <div class="col-12 col-sm-12 col-md-2 col-lg-1"></div> -->
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                     <!-- Form Group -->
                                     <div class="form-group mb-2">
-                                        <label for="username" class="mb-2"> Weather Location Group :</label>
-                                       
-                                        <p class="view-data">{{location.locationGroupCode}}</p>
+                                        <label for="username" class="mb-2">Code</label>
+                                        <p class="view-data">645645</p>
                                     </div>
-                                    <!-- Form Group -->
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Temp Reopen Date :</label>
-                                        <!-- <input type="text" class="form-control  h-25" id="username"
-                                                placeholder="Title" name="username"> -->
-                                        <p class="view-data">{{location.tempReopenDate}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Active :</label>
-                                        <!-- <input type="text" class="form-control  h-25" id="username"
-                                                placeholder="Title" name="username"> -->
-                                        <p class="view-data">{{location.active}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Temp Closure Date :</label>
-                                        <!-- <input type="text" class="form-control  h-25" id="username"
-                                                placeholder="Title" name="username"> -->
-                                        <p class="view-data">{{location.tempClosureDate}}</p>
-                                    </div>
+
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                     <!-- Form Group -->
                                     <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Start Date :</label>
-                                       
-                                        <p class="view-data">{{location.startDate}}</p>
+                                        <label for="username" class="mb-2">Address</label>
+                                        <p class="view-data">Hyderabad</p>
                                     </div>
-                                    <!-- Form Group -->
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Parent Location:</label>
-                                       
-                                        <!--   <p class="view-data">
-                                                        <span *ngFor="let subLocation of location">
-                                                            <span *ngIf="location.parentLocation == subLocation.id">
-                                                                {{subLocation.name}}
-                                                            </span>
-                                                        </span>
-                                                    </p> -->
-                                        <p class="view-data">{{location.parentLocation}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Region Name :</label>
-                                        <p class="view-data">{{location.regionName}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Location Code :</label>
-                                       
-                                        <p class="view-data">{{location.code}}</p>
-                                    </div>
-                                    <!-- Form Group -->
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Longitude :</label>
-                                       
-                                        <p class="view-data">{{location.longitude}}</p>
-                                    </div>
-                                    <!-- Form Group -->
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Latitude :</label>
-                                       
-                                        <p class="view-data">{{location.latitude}}</p>
-                                    </div>
-                                    <!-- Form Group -->
+
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                     <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Type</label>
+                                        <p class="view-data">City</p>
+                                    </div>
 
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Zip Code :</label>
-                                       
-                                        <p class="view-data">{{location.zipCode}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Channel Name :</label>
-                                        <p class="view-data">{{location.channelName}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Market Name :</label>
-                                        <p class="view-data">{{location.marketName}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Promoted Together :</label>
-                                        <p class="view-data">{{location.promotedTogether}}</p>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">Work Day :</label>
-                                        <p class="view-data">{{location.workDayCode}}</p>
-                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                     <!-- Form Group -->
                                     <div class="form-group mb-2">
-                                        <label for="username" class="mb-2">End Date :</label>
-                                       
-                                        <p class="view-data">{{location.endDate}}</p>
+                                        <label for="username" class="mb-2">Longitude</label>
+                                        <p class="view-data">45.20.56</p>
                                     </div>
-                                    <!-- Form Group -->
 
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Latitude</label>
+                                        <p class="view-data">56.89.62</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Zip Code</label>
+                                        <p class="view-data">562341</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Start Date</label>
+                                        <p class="view-data">12-02-2021</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Parent</label>
+                                        <p class="view-data">25</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Region Code</label>
+                                        <p class="view-data">Code-333</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Region Name</label>
+                                        <p class="view-data">Madhapur</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Channel Code</label>
+                                        <p class="view-data">code-333</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Channel Name</label>
+                                        <p class="view-data">Channel-1</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Market Code</label>
+                                        <p class="view-data">456289</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Market Name</label>
+                                        <p class="view-data">D-Mart</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Product Name</label>
+                                        <p class="view-data">Brush</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Work Day</label>
+                                        <p class="view-data">Day</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">End Date</label>
+                                        <p class="view-data">12-05-2021</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <!-- Form Group -->
+                                    <div class="form-group mb-2">
+                                        <label for="username" class="mb-2">Location Group</label>
+                                        <p class="view-data">Group-1</p>
+                                    </div>
 
                                 </div>
 
 
                             </div>
                             <div class="pull-right">
-                                <button type="button" id="cancel-save" class="btn btn-red" (click)="previousState()">
+                                <button type="button" (click)="previousState()" id="cancel-save"
+                                    class="btn btn-red btn-md mr-4">
                                     <span><i class="fa fa-arrow-left mr-2"></i>Back</span>
                                 </button>
                             </div>
                         </form>
                         <div class="clearfix"></div>
 
-
-
-
                     </div>
                     <!--End Page Content-->
-
                 </div>
                 <!-- End DataTales Start -->
-
             </div>
             <!--End ontainer Fluid-->
         </main>
         <!--End Main-->
-
     </section>
     <!--End Layout Sidenav Content-->
-
 </body>
