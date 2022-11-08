@@ -155,7 +155,7 @@
         <button
           ngbDropdownItem
           routerLink="/profile"
-          routerLinkActive="current"
+          routerLinkActive="current" (click)="goToProteusProfile()"
         >
           <i class="bx bx-user mr-2 text-gray-400"></i>
           My Profile
@@ -163,7 +163,7 @@
         <button
           ngbDropdownItem
           routerLink="/role-management"
-          routerLinkActive="current"
+          routerLinkActive="current" (click)="goToProteusRole()"
         >
           <i class="bx bx-user mr-2 text-gray-400"></i>
           Role Management
@@ -171,7 +171,7 @@
         <button
           ngbDropdownItem
           routerLink="/menu-management"
-          routerLinkActive="current"
+          routerLinkActive="current" (click)="goToProteusMenu()"
         >
           <i class="bx bx-menu mr-2 text-gray-400"></i>
           Menu Management
@@ -187,7 +187,7 @@
         <button
           ngbDropdownItem
           routerLink="/user-management"
-          routerLinkActive="current"
+          routerLinkActive="current" (click)="goToProteusUser()"
         >
           <i class="bx bx-user mr-2 text-gray-400"></i>
           User Management
@@ -195,7 +195,7 @@
         <button
           ngbDropdownItem
           routerLink="/scheduler"
-          routerLinkActive="current"
+          routerLinkActive="current" (click)="goToProteusScheduler()"
         >
           <i class="bx bx-calendar mr-2 text-gray-400"></i>
           Scheduler
@@ -203,7 +203,7 @@
         <button
           ngbDropdownItem
           routerLink="/publish-forecast"
-          routerLinkActive="current"
+          routerLinkActive="current" (click)="goToProteusPublishForecast()"
         >
           <i class="bx bx-news mr-2 text-gray-400"></i>
           Publish Forecast
@@ -211,12 +211,12 @@
         <button
           ngbDropdownItem
           routerLink="/configuration-settings"
-          routerLinkActive="current"
+          routerLinkActive="current" (click)="goToProteusConfigure()"
         >
           <i class="bx bx-cog mr-2 text-gray-400"></i>
           Configuration-settings
         </button>
-        <button ngbDropdownItem routerLink="/login" routerLinkActive="current">
+        <button ngbDropdownItem routerLink="/login" routerLinkActive="current" (click)="logout()">
           <i class="bx bx-log-out-circle mr-2 text-gray-400"></i>
           Logout
         </button>

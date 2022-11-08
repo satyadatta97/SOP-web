@@ -19,4 +19,37 @@ export class AppComponent {
  
     this.document.location.href = 'https://iplexr.com/apps';
   }
+  goToProteusRole(): void {
+ 
+    this.document.location.href = 'https://iplexr.com/role-management';
+  }
+  goToProteusProfile(): void {
+ 
+    this.document.location.href = 'https://iplexr.com/profile';
+  }
+  goToProteusMenu(): void {
+ 
+    this.document.location.href = 'https://iplexr.com/menu-management';
+  }
+  goToProteusUser(): void {
+ 
+    this.document.location.href = 'https://iplexr.com/user-management';
+  }
+  goToProteusScheduler(): void {
+ 
+    this.document.location.href = 'https://iplexr.com/scheduler';
+  }
+  goToProteusPublishForecast(): void {
+ 
+    this.document.location.href = 'https://iplexr.com/publish-forecast';
+  }
+  goToProteusConfigure(): void {
+ 
+    this.document.location.href = 'https://iplexr.com/configuration-settings';
+  }
+  logout(): void {
+ 
+    this.document.location.href = 'https://iplexr.com/login';
+  }
+
 }
