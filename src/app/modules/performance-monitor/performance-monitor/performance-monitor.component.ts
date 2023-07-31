@@ -19,8 +19,8 @@ export class PerformanceMonitorComponent implements OnInit {
         datasets: [
           {
             type: "bar",
-            backgroundColor: "#3e81c3",
-            borderColor: "#3e81c3",
+            backgroundColor: "#556ee6",
+            borderColor: "#556ee6",
             borderWidth: 1,
             label: "Actual",
             data: [60, 49, 72, 90, 100, 60,80]
@@ -29,7 +29,7 @@ export class PerformanceMonitorComponent implements OnInit {
             type: "line",
             label: "Plan",
             data: [0,25, 13, 30, 35, 25, 120],
-            borderColor: '#ff0000',
+            borderColor: '#34c38f',
             
             fill: true 
           }

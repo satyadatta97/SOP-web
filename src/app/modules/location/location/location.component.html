@@ -1,5 +1,4 @@
 <body class="sb-nav-fixed">
-
     <!--Layout Sidenav Content-->
     <section id="layoutSidenav_content">
         <!--Main-->
@@ -15,26 +14,25 @@
                            
                                 <h5 class="mb-0">Location</h5>
                            
-                            <div
-                                class="d-flex justify-content-end align-items-center py-1">
+                            <div class="d-flex justify-content-end align-items-center py-1">
                                 <input class="form-control mr-3" type="search" placeholder="Search here">
-                                <button type="button" class="btn btn-outline-success mr-2">
-                                    <i class="fa fa-filter fa-lg" aria-hidden="true"></i></button>
-                                    <label class="custom-file-upload btn btn-outline-success mr-2 btn-rel">
-                                        <i class="fa fa-arrow-down fa-lg" aria-hidden="true"></i>
-                                        <input type="file" name="file" accept=".csv,.xlsx">
-                                        <span class="btn-abs">Import</span>
-                                    </label>
-                                 <button type="button" class="btn btn-outline-success mr-2 btn-rel">
-                                    <i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>
-                                    <span class="btn-abs">Export</span>
-                                </button>
-                                    <button type="button" class="btn btn-outline-success mr-2">
-                                        <i class="fa fa-bars fa-lg fa-rotate-90" aria-hidden="true"></i>
-                                      </button>
-                                <button [routerLink]="['/ageGroup/new']" class="btn btn-outline-success" type="submit">
-                                    <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
-                                </button>
+                                <button type="button" class="btn btn-outline-dark mr-2 btn-rel">
+                                    <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+                                    <span class="btn-abs">Filter</span>
+                                  </button>
+                                  <label class="custom-file-upload btn btn-outline-dark mr-2 btn-rel">
+                                      <i class="fa fa-arrow-down fa-lg" aria-hidden="true"></i>
+                                      <input type="file" name="file" accept=".csv,.xlsx">
+                                      <span class="btn-abs">Import</span>
+                                  </label>
+                                  <button type="button" class="btn btn-outline-dark mr-2 btn-rel">
+                                      <i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>
+                                      <span class="btn-abs">Export</span>
+                                  </button>
+                                  <button type="button" class="btn btn-outline-dark mr-2 btn-rel">
+                                    <i class="fa fa-bars fa-lg fa-rotate-90" aria-hidden="true"></i>
+                                    <span class="btn-abs btn-abs-2x-long">Column Selection</span>
+                                  </button>
                             </div>
 
                         </div>
@@ -47,6 +45,7 @@
                             <table class="table table-bordered mt-2">
                                 <thead>
                                     <tr>
+                                        <th scope="col">Action</th>
                                         <th scope="col">S.No</th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Code</th>
@@ -67,11 +66,23 @@
                                         <th scope="col">Work Day</th>
                                         <th scope="col">End Date</th>
                                         <th scope="col">Location Group</th>
-                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                    [routerLink]="['/location/location-view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td scope="row">1</td>
                                         <td>Hyderabad</td>
                                         <td>Code 11</td>
@@ -92,58 +103,21 @@
                                         <td>Day</td>
                                         <td>04-02-21</td>
                                         <td>Group 1</td>
-    
-                                        <td>
-                                            <button [routerLink]="['/location/location-view']"
-                                                class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-eye color-green"
-                                                    aria-hidden="true"></i></button>
-                                            <!-- <button [routerLink]="['/ageGroup/new']"
-                                                class="btn btn-xs tableicon bluclr btn-edit-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-edit color-blue"
-                                                    aria-hidden="true"></i></button>
-                                            <button class="btn btn-xs tableicon bluclr btn-delete-hover" data-title="Edit"
-                                                data-toggle="modal" data-target="#edit"><i class="fa fa-trash  color-red"
-                                                    aria-hidden="true"></i></button> -->
-                                        </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">1</td>
-                                        <td>Hyderabad</td>
-                                        <td>Code 11</td>
-                                        <td>Secendrabad</td>
-                                        <td>market</td>
-                                        <td>54</td>
-                                        <td>86</td>
-                                        <td>123654</td>
-                                        <td>02-02-21</td>
-                                        <td>23</td>
-                                        <td>Code-333</td>
-                                        <td>Hyderguda</td>
-                                        <td>256565</td>
-                                        <td>A-Channel</td>
-                                        <td>563241</td>
-                                        <td>D-Mart</td>
-                                        <td>Product</td>
-                                        <td>Day</td>
-                                        <td>04-02-21</td>
-                                        <td>Group 1</td>
-    
                                         <td>
-                                            <button [routerLink]="['/location/location-view']"
-                                                class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-eye color-green"
-                                                    aria-hidden="true"></i></button>
-                                            <!-- <button [routerLink]="['/ageGroup/new']"
-                                                class="btn btn-xs tableicon bluclr btn-edit-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-edit color-blue"
-                                                    aria-hidden="true"></i></button>
-                                            <button class="btn btn-xs tableicon bluclr btn-delete-hover" data-title="Edit"
-                                                data-toggle="modal" data-target="#edit"><i class="fa fa-trash  color-red"
-                                                    aria-hidden="true"></i></button> -->
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                    [routerLink]="['/location/location-view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </td>
-                                    </tr>
-                                    <tr>
                                         <td scope="row">2</td>
                                         <td>Hyderabad</td>
                                         <td>Code 11</td>
@@ -164,22 +138,21 @@
                                         <td>Day</td>
                                         <td>04-02-21</td>
                                         <td>Group 1</td>
-    
-                                        <td>
-                                            <button [routerLink]="['/location/location-view']"
-                                                class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-eye color-green"
-                                                    aria-hidden="true"></i></button>
-                                            <!-- <button [routerLink]="['/ageGroup/new']"
-                                                class="btn btn-xs tableicon bluclr btn-edit-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-edit color-blue"
-                                                    aria-hidden="true"></i></button>
-                                            <button class="btn btn-xs tableicon bluclr btn-delete-hover" data-title="Edit"
-                                                data-toggle="modal" data-target="#edit"><i class="fa fa-trash  color-red"
-                                                    aria-hidden="true"></i></button> -->
-                                        </td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                    [routerLink]="['/location/location-view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td scope="row">3</td>
                                         <td>Hyderabad</td>
                                         <td>Code 11</td>
@@ -200,22 +173,21 @@
                                         <td>Day</td>
                                         <td>04-02-21</td>
                                         <td>Group 1</td>
-    
-                                        <td>
-                                            <button [routerLink]="['/location/location-view']"
-                                                class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-eye color-green"
-                                                    aria-hidden="true"></i></button>
-                                            <!-- <button [routerLink]="['/ageGroup/new']"
-                                                class="btn btn-xs tableicon bluclr btn-edit-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-edit color-blue"
-                                                    aria-hidden="true"></i></button>
-                                            <button class="btn btn-xs tableicon bluclr btn-delete-hover" data-title="Edit"
-                                                data-toggle="modal" data-target="#edit"><i class="fa fa-trash  color-red"
-                                                    aria-hidden="true"></i></button> -->
-                                        </td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                    [routerLink]="['/location/location-view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td scope="row">4</td>
                                         <td>Hyderabad</td>
                                         <td>Code 11</td>
@@ -236,20 +208,41 @@
                                         <td>Day</td>
                                         <td>04-02-21</td>
                                         <td>Group 1</td>
-    
+                                    </tr>
+                                    <tr>
                                         <td>
-                                            <button [routerLink]="['/location/location-view']"
-                                                class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-eye color-green"
-                                                    aria-hidden="true"></i></button>
-                                            <!-- <button [routerLink]="['/ageGroup/new']"
-                                                class="btn btn-xs tableicon bluclr btn-edit-hover" data-title="Edit" data-toggle="modal"
-                                                data-target="#edit"><i class="fa fa-edit color-blue"
-                                                    aria-hidden="true"></i></button>
-                                            <button class="btn btn-xs tableicon bluclr btn-delete-hover" data-title="Edit"
-                                                data-toggle="modal" data-target="#edit"><i class="fa fa-trash  color-red"
-                                                    aria-hidden="true"></i></button> -->
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                    [routerLink]="['/location/location-view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </td>
+                                        <td scope="row">5</td>
+                                        <td>Hyderabad</td>
+                                        <td>Code 11</td>
+                                        <td>Secendrabad</td>
+                                        <td>market</td>
+                                        <td>54</td>
+                                        <td>86</td>
+                                        <td>123654</td>
+                                        <td>02-02-21</td>
+                                        <td>23</td>
+                                        <td>Code-333</td>
+                                        <td>Hyderguda</td>
+                                        <td>256565</td>
+                                        <td>A-Channel</td>
+                                        <td>563241</td>
+                                        <td>D-Mart</td>
+                                        <td>Product</td>
+                                        <td>Day</td>
+                                        <td>04-02-21</td>
+                                        <td>Group 1</td>
                                     </tr>
     
                                 </tbody>

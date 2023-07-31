@@ -37,24 +37,18 @@
                                 <div id="tab1" class="each-tab-slider-content mt-3" *ngSwitchCase="'tab1'">
                                     <form>
                                         <div class="row loginsrn">
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 mt-3">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-2">
                                                 <!-- Form Group -->
                                                 <div class="form-group mb-4 d-flex">
                                                     <label for="username" class="mb-2 w-25">Scenario Name</label>
-                                                    <input type="text" class="form-control  h-25" id="username"
+                                                    <input type="text" class="form-control  " id="username"
                                                         placeholder="Scenario Name" name="username">
                                                 </div>
                                                 <!-- Form Group -->
-                                                <!-- Form Group -->
-                                                <div class="form-group mb-4 d-flex">
-                                                    <label for="username" class="mb-2 w-25">Scenario Period</label>
-                                                    <input type="date" class="form-control  h-25" id="username"
-                                                        placeholder="Contact No" name="username">
-                                                </div>
-                                                <!-- Form Group -->
+                                              
                                                 <div class="form-group mb-4 d-flex">
                                                     <label for="username" class="mb-2 w-25">Scenario Type</label>
-                                                    <select class="form-control  h-25" formControlName="holidayGroupCode">
+                                                    <select class="form-control  " formControlName="holidayGroupCode">
                                                         <option value="0" selected> Select Type</option>
                                                         <option value="1">Type-1</option>
                                                         <option value="2">Type-2</option>
@@ -64,10 +58,18 @@
                                              
             
                                             </div>
-                                           
-                                            <div class="pull-left text-left">
+                                           <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-2">
+                                                <!-- Form Group -->
+                                                <div class="form-group mb-4 d-flex">
+                                                <label for="username" class="mb-2 w-25">Scenario Period</label>
+                                                <input type="date" class="form-control  " id="username"
+                                                    placeholder="Contact No" name="username">
+                                                </div>
+                                                <!-- Form Group -->
+                                           </div>
+                                            <div class="pull-right text-right">
                                                
-                                                <button type="submit" id="save-entity" class="btn  btn-md bg-green">
+                                                <button type="submit" id="save-entity" class="btn btn-dark">
                                                     <span> <i class="fa fa-plus mr-2" aria-hidden="true"></i>Create</span>
                                                 </button>
                                             </div>
@@ -78,33 +80,37 @@
                                 <div id="tab2" class="each-tab-slider-content mt-3" *ngSwitchCase="'tab2'">
                                     <form>
                                         <div class="row loginsrn">
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 mt-3">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-2">
                                                 <!-- Form Group -->
-                                                <div class="form-group mb-2 d-flex">
+                                                <div class="form-group mb-4 d-flex">
                                                     <label for="username" class="mb-2 w-25">Scenario Name</label>
-                                                    <input type="text" class="form-control  h-25" id="username"
-                                                        placeholder="Scenario Name" name="username">
-                                                </div>
-                                                <!-- Form Group -->
-                                                <!-- Form Group -->
-                                                <div class="form-group mb-2 d-flex">
-                                                    <label for="username" class="mb-2 w-25">Scenario Period</label>
-                                                    <input type="date" class="form-control  h-25" id="username"
+                                                    <input type="date" class="form-control  " id="username"
                                                         placeholder="Contact No" name="username">
                                                 </div>
                                                 <!-- Form Group -->
-                                                <div class="form-group mb-2 d-flex">
+                                                <!-- Form Group -->
+                                                <div class="form-group mb-4 d-flex">
+                                                    <label for="username" class="mb-2 w-25">Scenario Period</label>
+                                                    <input type="date" class="form-control  " id="username"
+                                                        placeholder="Contact No" name="username">
+                                                </div>
+                                                <!-- Form Group -->
+                                               
+            
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-2">
+                                                <div class="form-group mb-4 d-flex">
                                                     <label for="username" class="mb-2 w-25">Scenario Type</label>
-                                                    <select class="form-control  h-25" formControlName="holidayGroupCode">
+                                                    <select class="form-control  " formControlName="holidayGroupCode">
                                                         <option value="0" selected> Select Type</option>
                                                         <option value="1">Type-1</option>
                                                         <option value="2">Type-2</option>
                                                         <option value="3">Type-3</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group mb-2 d-flex">
+                                                <div class="form-group mb-4 d-flex">
                                                     <label for="username" class="mb-2 w-25">Channel</label>
-                                                    <select class="form-control  h-25" formControlName="holidayGroupCode">
+                                                    <select class="form-control  " formControlName="holidayGroupCode">
                                                         <option value="0" selected> Select Channel</option>
                                                         <option value="1">Channel-1</option>
                                                         <option value="2">Channel-2</option>
@@ -112,9 +118,7 @@
                                                     </select>
                                                 </div>
                                              
-            
                                             </div>
-                                           
                                             <div class="table-responsive">
                                                 <table class="table table-bordered mt-1">
                                                     <thead>
@@ -128,7 +132,7 @@
                                                         <tr>
                                                             <td class="vertical-center">DC-01</td>
                                                             <td>
-                                                                <select class="form-control  h-25 my-1" formControlName="holidayGroupCode">
+                                                                <select class="form-control  my-1" formControlName="holidayGroupCode">
                                                                     <option value="0" selected> Select Scenario</option>
                                                                     <option value="1">December 2021 S&OP Plan</option>
                                                                     <option value="2">November 2021 S&OP Plan</option>
@@ -140,7 +144,7 @@
                                                         <tr>
                                                             <td class="vertical-center">DC-02</td>
                                                             <td>
-                                                                <select class="form-control  h-25 my-1" formControlName="holidayGroupCode">
+                                                                <select class="form-control  my-1" formControlName="holidayGroupCode">
                                                                     <option value="0" selected> Select Scenario</option>
                                                                     <option value="1">December 2021 S&OP Plan</option>
                                                                     <option value="2">November 2021 S&OP Plan</option>
@@ -152,7 +156,7 @@
                                                         <tr>
                                                             <td class="vertical-center">DC-03</td>
                                                             <td>
-                                                                <select class="form-control  h-25 my-1" formControlName="holidayGroupCode">
+                                                                <select class="form-control  my-1" formControlName="holidayGroupCode">
                                                                     <option value="0" selected> Select Scenario</option>
                                                                     <option value="1">December 2021 S&OP Plan</option>
                                                                     <option value="2">November 2021 S&OP Plan</option>
@@ -164,7 +168,7 @@
                                                         <tr>
                                                             <td class="vertical-center">DC-04</td>
                                                             <td>
-                                                                <select class="form-control  h-25 my-1" formControlName="holidayGroupCode">
+                                                                <select class="form-control  my-1" formControlName="holidayGroupCode">
                                                                     <option value="0" selected> Select Scenario</option>
                                                                     <option value="1">December 2021 S&OP Plan</option>
                                                                     <option value="2">November 2021 S&OP Plan</option>
@@ -176,7 +180,7 @@
                                                         <tr>
                                                             <td class="vertical-center">DC-05</td>
                                                             <td>
-                                                                <select class="form-control  h-25 my-1" formControlName="holidayGroupCode">
+                                                                <select class="form-control  my-1" formControlName="holidayGroupCode">
                                                                     <option value="0" selected> Select Scenario</option>
                                                                     <option value="1">December 2021 S&OP Plan</option>
                                                                     <option value="2">November 2021 S&OP Plan</option>
@@ -188,7 +192,7 @@
                                                         <tr>
                                                             <td class="vertical-center">DC-06</td>
                                                             <td>
-                                                                <select class="form-control  h-25 my-1" formControlName="holidayGroupCode">
+                                                                <select class="form-control my-1" formControlName="holidayGroupCode">
                                                                     <option value="0" selected> Select Scenario</option>
                                                                     <option value="1">December 2021 S&OP Plan</option>
                                                                     <option value="2">November 2021 S&OP Plan</option>
@@ -200,7 +204,7 @@
                                                         <tr>
                                                             <td class="vertical-center">DC-07</td>
                                                             <td>
-                                                                <select class="form-control  h-25 my-1" formControlName="holidayGroupCode">
+                                                                <select class="form-control  my-1" formControlName="holidayGroupCode">
                                                                     <option value="0" selected> Select Scenario</option>
                                                                     <option value="1">December 2021 S&OP Plan</option>
                                                                     <option value="2">November 2021 S&OP Plan</option>
@@ -212,7 +216,7 @@
                                                         <tr>
                                                             <td class="vertical-center">DC-08</td>
                                                             <td>
-                                                                <select class="form-control h-25 my-1" formControlName="holidayGroupCode">
+                                                                <select class="form-control  my-1" formControlName="holidayGroupCode">
                                                                     <option value="0" selected> Select Scenario</option>
                                                                     <option value="1">December 2021 S&OP Plan</option>
                                                                     <option value="2">November 2021 S&OP Plan</option>
@@ -227,9 +231,9 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <div class="pull-left text-left">
+                                            <div class="pull-right text-right">
                                              
-                                                <button type="submit" id="save-entity" class="btn  btn-md bg-green mt-4 mb-4">
+                                                <button type="submit" id="save-entity" class="btn btn-dark mt-4 mb-4">
                                                     <span> <i class="fa fa-floppy-o mr-2" aria-hidden="true"></i>Publish</span>
                                                 </button>
                                             </div>

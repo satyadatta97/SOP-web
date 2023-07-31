@@ -1,155 +1,168 @@
 <body class="sb-nav-fixed">
 
-  <!--Layout Sidenav Content-->
-  <section id="layoutSidenav_content">
-      <!--Main-->
-      <main class="content-padding1">
-          <!--Container Fluid-->
-          <div class="container-fluid">
-              <!--Page Content-->
-              <div class="page-content">
-                  <!--Page Header-->
-                  <div class="page-header border-bottom-dark">
-                      <!--row-->
-                      <div class="d-flex align-items-center justify-content-between">
+    <!--Layout Sidenav Content-->
+    <section id="layoutSidenav_content">
+        <!--Main-->
+        <main class="content-padding1">
+            <!--Container Fluid-->
+            <div class="container-fluid">
+                <!--Page Content-->
+                <div class="page-content">
+                    <!--Page Header-->
+                    <div class="page-header border-bottom-dark">
+                        <!--row-->
+                        <div class="d-flex align-items-center justify-content-between">
 
-                          <h5 class="mb-0">Category</h5>
+                            <h5 class="mb-0">Category</h5>
 
-                          <div
-                          class="d-flex justify-content-end align-items-center py-1">
-                          <input class="form-control mr-3" type="search" placeholder="Search here">
-                          <button type="button" class="btn btn-outline-success mr-2">
-                              <i class="fa fa-filter fa-lg" aria-hidden="true"></i></button>
-                              <label class="custom-file-upload btn btn-outline-success mr-2 btn-rel">
-                                  <i class="fa fa-arrow-down fa-lg" aria-hidden="true"></i>
-                                  <input type="file" name="file" accept=".csv,.xlsx">
-                                  <span class="btn-abs">Import</span>
-                              </label>
-                           <button type="button" class="btn btn-outline-success mr-2 btn-rel">
-                              <i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>
-                              <span class="btn-abs">Export</span>
-                          </button>
-                              <button type="button" class="btn btn-outline-success mr-2">
-                                  <i class="fa fa-bars fa-lg fa-rotate-90" aria-hidden="true"></i>
+                            <div class="d-flex justify-content-end align-items-center py-1">
+                                <input class="form-control mr-3" type="search" placeholder="Search here">
+                                 <button type="button" class="btn btn-outline-dark mr-2 btn-rel">
+                                    <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+                                    <span class="btn-abs">Filter</span>
+                                  </button>
+                                <label class="custom-file-upload btn btn-outline-dark mr-2 btn-rel">
+                                    <i class="fa fa-arrow-down fa-lg" aria-hidden="true"></i>
+                                    <input type="file" name="file" accept=".csv,.xlsx">
+                                    <span class="btn-abs">Import</span>
+                                </label>
+                                 <button type="button" class="btn btn-outline-dark mr-2 btn-rel">
+                                    <i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>
+                                    <span class="btn-abs">Export</span>
                                 </button>
-                      </div>
+                                <button type="button" class="btn btn-outline-dark mr-2 btn-rel">
+                                    <i class="fa fa-bars fa-lg fa-rotate-90" aria-hidden="true"></i>
+                                    <span class="btn-abs btn-abs-2x-long">Column Selection</span>
+                                </button>
+                            </div>
 
-                      </div>
-                      <!--End row-->
-                  </div>
-                  <!--End Page Header-->
+                        </div>
+                        <!--End row-->
+                    </div>
+                    <!--End Page Header-->
 
-                  <div class="blog-post">
-                      <div class="table-responsive">
-                          <table class="table table-bordered mt-2">
-                              <thead>
-                                  <tr>
-                                      <th scope="col">S.No</th>
-                                      <th scope="col">Code</th>
-                                      <th scope="col">Name</th>
-                                      <th scope="col">Parent</th>
-                                      <th scope="col">Action</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                  <tr>
-                                      <th scope="row">1</th>
-                                      <td>45451</td>
-                                      <td>Category 1</td>
-                                      <td>List</td>
+                    <div class="blog-post">
+                        <div class="table-responsive">
+                            <table class="table table-bordered mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Action</th>
+                                        <th scope="col">S.No</th>
+                                        <th scope="col">Code</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Parent</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                        [routerLink]="['/categories/view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td scope="row">1</td>
+                                        <td>45451</td>
+                                        <td>Category 1</td>
+                                        <td>List</td>
 
-                                      <td>
-                                          <button [routerLink]="['/categories/view']"
-                                              class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit"
-                                              data-toggle="modal" data-target="#edit"><i class="fa fa-eye color-green"
-                                                  aria-hidden="true"></i></button>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                        [routerLink]="['/categories/view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td scope="row">2</td>
+                                        <td>45451</td>
+                                        <td>Category 1</td>
+                                        <td>List</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                        [routerLink]="['/categories/view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td scope="row">3</td>
+                                        <td>45451</td>
+                                        <td>Category 1</td>
+                                        <td>List</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                        [routerLink]="['/categories/view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td scope="row">4</td>
+                                        <td>45451</td>
+                                        <td>Category 1</td>
+                                        <td>List</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div ngbDropdown class="d-inline-block">
+                                                <button type="button" class="btn bg-c" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog"
+                                                        aria-hidden="true"></i>
+                                                </button>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="action-dropdown">
+                                                    <button ngbDropdownItem class="btn  btn-xs tableicon bluclr" data-title="View" data-toggle="modal"
+                                                        [routerLink]="['/categories/view']" data-target="#view"> <i class="fa fa-eye color-text-primary mr-1"
+                                                            aria-hidden="true"></i><span>View</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td scope="row">5</td>
+                                        <td>45451</td>
+                                        <td>Category 1</td>
+                                        <td>List</td>
+                                    </tr>
 
-                                      </td>
-
-                                  </tr>
-                                  <tr>
-                                      <th scope="row">2</th>
-                                      <td>45451</td>
-                                      <td>Category 1</td>
-                                      <td>List</td>
-
-                                      <td>
-                                          <button [routerLink]="['/categories/view']"
-                                              class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit"
-                                              data-toggle="modal" data-target="#edit"><i class="fa fa-eye color-green"
-                                                  aria-hidden="true"></i></button>
-
-                                      </td>
-
-                                  </tr>
-                                  <tr>
-                                      <th scope="row">3</th>
-                                      <td>45451</td>
-                                      <td>Category 1</td>
-                                      <td>List</td>
-
-                                      <td>
-                                          <button [routerLink]="['/categories/view']"
-                                              class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit"
-                                              data-toggle="modal" data-target="#edit"><i class="fa fa-eye color-green"
-                                                  aria-hidden="true"></i></button>
-
-                                      </td>
-
-                                  </tr>
-                                  <tr>
-                                      <th scope="row">4</th>
-                                      <td>45451</td>
-                                      <td>Category 1</td>
-                                      <td>List</td>
-
-                                      <td>
-                                          <button [routerLink]="['/categories/view']"
-                                              class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit"
-                                              data-toggle="modal" data-target="#edit"><i class="fa fa-eye color-green"
-                                                  aria-hidden="true"></i></button>
-
-                                      </td>
-
-                                  </tr>
-                                  <tr>
-                                      <th scope="row">5</th>
-                                      <td>45451</td>
-                                      <td>Category 1</td>
-                                      <td>List</td>
-
-                                      <td>
-                                          <button [routerLink]="['/categories/view']"
-                                              class="btn  btn-xs tableicon bluclr btn-view-hover" data-title="Edit"
-                                              data-toggle="modal" data-target="#edit"><i class="fa fa-eye color-green"
-                                                  aria-hidden="true"></i></button>
-
-                                      </td>
-
-                                  </tr>
-
-                              </tbody>
-                          </table>
-
-                      </div>
-
-                      <div class="clearfix"></div>
-
-
-
-
-                  </div>
-                  <!--End Page Content-->
-
-              </div>
-              <!-- End DataTales Start -->
-
-          </div>
-          <!--End ontainer Fluid-->
-      </main>
-      <!--End Main-->
-
-  </section>
-  <!--End Layout Sidenav Content-->
-
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!--End Page Content-->
+                </div>
+                <!-- End DataTales Start -->
+            </div>
+            <!--End ontainer Fluid-->
+        </main>
+        <!--End Main-->
+    </section>
+    <!--End Layout Sidenav Content-->
 </body>

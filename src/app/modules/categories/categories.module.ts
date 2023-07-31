@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CategoriesRoutingModule } from './categories-routing.module';
 import { ListComponent } from './list/list.component';
 import { ViewComponent } from './view/view.component';
@@ -13,7 +13,8 @@ import { ViewComponent } from './view/view.component';
   ],
   imports: [
     CommonModule,
-    CategoriesRoutingModule
+    CategoriesRoutingModule,
+    NgbModule 
   ]
 })
 export class CategoriesModule { }

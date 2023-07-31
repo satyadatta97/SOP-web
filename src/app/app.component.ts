@@ -51,5 +51,32 @@ export class AppComponent {
  
     this.document.location.href = 'https://iplexr.com/login';
   }
-
+  wayToApps(): void {
+    this.document.location.href = 'apps';
+  }
+  togglemenu(){
+    let arrow:any = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      // arrow[i].addEventListener("click", (e:any)=>{
+    //  let arrowParent = arrow[i].parentElement.parentElement;//selecting main parent of arrow
+    //  arrowParent.classList.toggle("showMenu");
+      // });
+    }
+    let sidebar:any = document.querySelector(".sidebar");
+    let sidebarBtn:any = document.querySelector(".bs-menu");
+    console.log(sidebarBtn);
+    // sidebarBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
+    // });
+  }
+  togglesubmenu($event:any,elementid:string){
+    console.log("working",$event)
+    // $event.target.parentElement.parentElement.parentElement.classList.toggle("showMenu");
+    try{
+      document.getElementById(elementid)?.classList.toggle("showMenu");
+    }
+    catch(e:any){
+      
+    }
+  }
 }
