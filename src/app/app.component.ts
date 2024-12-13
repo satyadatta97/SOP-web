@@ -1,6 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { SCM_WEB_APP_URL } from './app-constants';
 
 @Component({
   selector: 'app-root',
@@ -53,6 +54,9 @@ export class AppComponent {
   }
   wayToApps(): void {
     this.document.location.href = 'apps';
+  }
+  goToApps(){
+    this.document.location.href = SCM_WEB_APP_URL+'apps';
   }
   togglemenu(){
     let arrow:any = document.querySelectorAll(".arrow");
