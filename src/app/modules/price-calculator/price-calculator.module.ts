@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PriceCalculatorRoutingModule } from './price-calculator-routing.module';
 import { PriceCalculatorComponent } from './price-calculator/price-calculator.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -11,7 +12,7 @@ import { PriceCalculatorComponent } from './price-calculator/price-calculator.co
   ],
   imports: [
     CommonModule,
-    PriceCalculatorRoutingModule
+    PriceCalculatorRoutingModule,NgbModule
   ]
 })
 export class PriceCalculatorModule { }

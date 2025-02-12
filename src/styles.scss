@@ -5,13 +5,16 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap/scss/bootstrap";
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 //@import "../node_modules/angular-calendar/css/angular-calendar.css";
 // @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,600;0,600;0,800;0,900;0,1000;1,200;1,300;1,400;1,600;1,600;1,600;1,800;1,900;1,1000&display=swap');
 body {
   // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
   //   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
- font-size: var(--application-font-size);
+ font-size: var(--application-font-size) ;
   color: #333;
+  font-family: "Roboto", serif !important;
+  font-optical-sizing: auto;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1223,13 +1226,13 @@ article canvas {
 // .content-padding1 {
  
 // }
-.sb-nav-fixed{
-  // max-height: calc(100vh - 58px);
-  // overflow-y: auto;
-  // position: fixed;
-  // background-color: var(--color-primary-contrast);
-  // width: calc(100vw - 64px);
-}
+// .sb-nav-fixed{
+//   // max-height: calc(100vh - 58px);
+//   // overflow-y: auto;
+//   // position: fixed;
+//   // background-color: var(--color-primary-contrast);
+//   // width: calc(100vw - 64px);
+// }
 .content-margin {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -1283,7 +1286,7 @@ tbody:hover {
   .each-tab-slider {
     cursor: pointer;
     // margin: 0px 16px;
-    padding: 0px 4px;
+    padding: 6px 4px;
     white-space: pre;
     position: relative;
     font-size: var(--application-font-size) !important;
@@ -3921,9 +3924,7 @@ input:focus-visible {
 .w-42px{
   width: 42px !important;
 }
-table{
-  width: max-content !important;
-}
+
 
 // .table-responsive {
 //   overflow-y: visible !important;
@@ -4041,7 +4042,7 @@ th,td{
   input[type='checkbox']{
     margin: 6px 0px 0px 0px !important;
   }
-  height: 36px;
+  height: 28px;
 }
 td{
   color: #495057 !important;
@@ -4081,3 +4082,12 @@ table th{
 // html,body,button,h1,h2,h3,h4,h5,h6,p,select,.form-control,input,.btn,.btn-abs,b{
 //   font-family: 'Nunito Sans', sans-serif !important;
 // }
+.wid-140{
+  width: 140px;
+}
+// table{
+//   width: max-content !important;
+// }
+.w-64px{
+  width: 64px;
+}
