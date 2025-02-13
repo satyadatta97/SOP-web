@@ -1,269 +1,265 @@
 <body class="sb-nav-fixed">
     <section id="layoutSidenav_content">
-        <!--Main-->
         <main class="content-padding1">
-
             <!--Container Fluid-->
             <div class="container-fluid">
+               <div class="page-content">
                 <div class="border-bottom-dark page-header">
-                    <div class="d-flex justify-content-between">
-                        <h5 class="font-weight-bold mb-0 mt-1">Dashboard</h5>
-                    </div>
-                </div>
-                <div class=" hide-rel container-fluid">
-                    <button class="btn btn-link hide-btn"
-                        id="sidebarToggle" (click)="hideMenu()"><i
-                            class="fa fa-angle-double-right text-dark"></i></button>
-                    <div class="row mt-3 loginsrn no-gutters">
-                        <div class="col-lg-12 col-md-12 col-xl-9 px-0"
-                            [ngClass]="{'slide-right-close':slideMenuHide == false}">
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-xl-3 slide-right-open" *ngIf=slideMenuHide>
-                          <div class="login">
-                            <div class="new-today pb-4">
-                              <a href="/todo-list" class="py-2 text-dark w-100">
-                              <div class="d-flex justify-content-between border-bottom">
-                                <h6 class="font-weight-bold mb-1" ><b>To Do List</b>
-                               
-                                  </h6>
-                              </div>
-                            </a>
-                              <div
-                                class="new-today-items pt-1"
-                               
-                              >
-                                <!--Each-Item-->
-                                <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted">
-                                      <h6 class="mr-2 mb-0">Title</h6>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <button
-                                      [routerLink]="['/todo-list', 'view']"
-                                      class="btn btn-xs tableicon bluclr btn-view-hover"
-                                      data-title="Edit"
-                                      data-toggle="modal"
-                                      data-target="#edit"
-                                    >
-                                      <i
-                                        class="fa fa-external-link fa-lg custom-link"
-                                        aria-hidden="true"
-                                      ></i>
-                                    </button>
+                  <div class="d-flex justify-content-between">
+                      <h5 class="font-weight-bold mb-0 mt-1">Dashboard</h5>
+                  </div>
+              </div>
+              <div class=" hide-rel container-fluid">
+                  <button class="btn btn-link hide-btn"
+                      id="sidebarToggle" (click)="hideMenu()"><i
+                          class="fa fa-angle-double-right text-dark"></i></button>
+                  <div class="row mt-3 loginsrn no-gutters">
+                      <div class="col-lg-12 col-md-12 col-xl-9 px-0"
+                          [ngClass]="{'slide-right-close':slideMenuHide == false}">
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-xl-3 slide-right-open" *ngIf=slideMenuHide>
+                        <div class="login">
+                          <div class="new-today pb-4">
+                            <a href="/todo-list" class="py-2 text-dark w-100">
+                            <div class="d-flex justify-content-between border-bottom">
+                              <h6 class="font-weight-bold mb-1" ><b>To Do List</b>
+                             
+                                </h6>
+                            </div>
+                          </a>
+                            <div
+                              class="new-today-items pt-1"
+                             
+                            >
+                              <!--Each-Item-->
+                              <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted">
+                                    <h6 class="mr-2 mb-0">Title</h6>
                                   </div>
                                 </div>
-                                <!--Each-Item-->
-                                <!--Each-Item-->
-                                <!-- <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted">
-                                      <h6 class="mr-2 mb-0">New Family Pack</h6>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="#!" class="pl-3 py-2"
-                                      ><i
-                                        class="fa fa-external-link fa-lg custom-link custom-link"
-                                        aria-hidden="true"
-                                      ></i
-                                    ></a>
-                                  </div>
-                                </div> -->
-                                <!--Each-Item-->
-                                <!--Each-Item-->
-                                <!-- <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted">
-                                      <h6 class="mr-2 mb-0">Buy 1 Get 2</h6>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="#!" class="pl-3 py-2"
-                                      ><i
-                                        class="fa fa-external-link fa-lg custom-link custom-link"
-                                        aria-hidden="true"
-                                      ></i
-                                    ></a>
-                                  </div>
-                                </div> -->
-                                <!--Each-Item-->
+                                <div class="d-flex">
+                                  <button
+                                    [routerLink]="['/todo-list', 'view']"
+                                    class="btn btn-xs tableicon bluclr btn-view-hover"
+                                    data-title="Edit"
+                                    data-toggle="modal"
+                                    data-target="#edit"
+                                  >
+                                    <i
+                                      class="fa fa-external-link fa-lg custom-link"
+                                      aria-hidden="true"
+                                    ></i>
+                                  </button>
+                                </div>
                               </div>
-                            </div>
-                            <!-- End To Do List -->
-                            <!-- Upcomming Promotions -->
-                            <div class="new-today pb-4">
-                              <a href="/promotion-calendar" class="py-2 text-dark w-100"
-                              >
-                              <div class="d-flex justify-content-between border-bottom">
-                                <h6 class="font-weight-bold mb-1"><b>Upcoming Promotions</b>
-                                 </h6>
-                              </div>
-                            </a>
-                              <!--New-Today-Items-->
-                              <div
-                                class="new-today-items pt-1"
-                               
-                              >
-                                <!--Each-Item-->
-                                <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted">
-                                      <h6 class="mr-2 mb-0">name</h6>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <button
-                                    [routerLink]="['/promotion-calendar']"
-                                      class="btn btn-xs tableicon bluclr btn-view-hover"
-                                      data-title="Edit"
-                                      data-toggle="modal"
-                                      data-target="#edit"
-                                    >
-                                      <i
-                                        class="fa fa-external-link fa-lg custom-link"
-                                        aria-hidden="true"
-                                      ></i>
-                                    </button>
+                              <!--Each-Item-->
+                              <!--Each-Item-->
+                              <!-- <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted">
+                                    <h6 class="mr-2 mb-0">New Family Pack</h6>
                                   </div>
                                 </div>
-                                <!--Each-Item-->
-                                <!--Each-Item-->
-                                <!-- <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted">
-                                      <h6 class="mr-2 mb-0">New Family Pack</h6>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="#!" class="pl-3 py-2"
-                                      ><i
-                                        class="fa fa-external-link fa-lg custom-link custom-link"
-                                        aria-hidden="true"
-                                      ></i
-                                    ></a>
-                                  </div>
-                                </div> -->
-                                <!--Each-Item-->
-                                <!--Each-Item-->
-                                <!-- <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted">
-                                      <h6 class="mr-2 mb-0">Buy 1 Get 2</h6>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="#!" class="pl-3 py-2"
-                                      ><i
-                                        class="fa fa-external-link fa-lg custom-link custom-link"
-                                        aria-hidden="true"
-                                      ></i
-                                    ></a>
-                                  </div>
-                                </div> -->
-                                <!--Each-Item-->
-                              </div>
-                            </div>
-                            <!-- End Upcomming Promotions -->
-                            <!-- Upcomming Promotions -->
-                            <div class="new-today">
-                              <a href="/forecast-exceptions" class="py-2 text-dark w-100"
-                              >
-                            
-                              <div class="d-flex justify-content-between border-bottom">
-                                <h6 class="font-weight-bold mb-1"><b>Top Exceptions</b>
-                                 </h6>
-                              </div>
-                            </a>
-                              <!--New-Today-Items-->
-                              <div
-                                class="new-today-items pt-1"
-                               
-                              >
-                                <!--Each-Item-->
-                                <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted d-flex align-items-center">
-                                      <h6 class="mr-2 mb-0">
-                                       code
-                                      </h6>
-                                     
-                                      <!-- <h6 class="=mr-2 mb-0"> {{forecastException.exceptionTypeName}} </h6> -->
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <button
-                                      [routerLink]="[
-                                        '/forecast-exceptions',
-                                       
-                                        'view'
-                                      ]"
-                                      class="btn btn-xs tableicon bluclr btn-view-hover"
-                                      data-title="Edit"
-                                      data-toggle="modal"
-                                      data-target="#edit"
-                                    >
-                                      <i
-                                        class="fa fa-external-link fa-lg custom-link"
-                                        aria-hidden="true"
-                                      ></i>
-                                    </button>
+                                <div class="d-flex">
+                                  <a href="#!" class="pl-3 py-2"
+                                    ><i
+                                      class="fa fa-external-link fa-lg custom-link custom-link"
+                                      aria-hidden="true"
+                                    ></i
+                                  ></a>
+                                </div>
+                              </div> -->
+                              <!--Each-Item-->
+                              <!--Each-Item-->
+                              <!-- <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted">
+                                    <h6 class="mr-2 mb-0">Buy 1 Get 2</h6>
                                   </div>
                                 </div>
-                                <!--Each-Item-->
-                                <!--Each-Item-->
-                                <!-- <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted">
-                                      <h6 class="mr-2 mb-0">New Family Pack</h6>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="#!" class="pl-3 py-2"
-                                      ><i
-                                        class="fa fa-external-link fa-lg custom-link custom-link"
-                                        aria-hidden="true"
-                                      ></i
-                                    ></a>
-                                  </div>
-                                </div> -->
-                                <!--Each-Item-->
-                                <!--Each-Item-->
-                                <!-- <div class="d-flex new-today-item">
-                                  <div class="comp-data">
-                                    <div class="media text-muted">
-                                      <h6 class="mr-2 mb-0">Buy 1 Get 2</h6>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="#!" class="pl-3 py-2"
-                                      ><i
-                                        class="fa fa-external-link fa-lg custom-link custom-link"
-                                        aria-hidden="true"
-                                      ></i
-                                    ></a>
-                                  </div>
-                                </div> -->
-                                <!--Each-Item-->
-                              </div>
+                                <div class="d-flex">
+                                  <a href="#!" class="pl-3 py-2"
+                                    ><i
+                                      class="fa fa-external-link fa-lg custom-link custom-link"
+                                      aria-hidden="true"
+                                    ></i
+                                  ></a>
+                                </div>
+                              </div> -->
+                              <!--Each-Item-->
                             </div>
-                            <!-- End Upcomming Promotions -->
                           </div>
+                          <!-- End To Do List -->
+                          <!-- Upcomming Promotions -->
+                          <div class="new-today pb-4">
+                            <a href="/promotion-calendar" class="py-2 text-dark w-100"
+                            >
+                            <div class="d-flex justify-content-between border-bottom">
+                              <h6 class="font-weight-bold mb-1"><b>Upcoming Promotions</b>
+                               </h6>
+                            </div>
+                          </a>
+                            <!--New-Today-Items-->
+                            <div
+                              class="new-today-items pt-1"
+                             
+                            >
+                              <!--Each-Item-->
+                              <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted">
+                                    <h6 class="mr-2 mb-0">name</h6>
+                                  </div>
+                                </div>
+                                <div class="d-flex">
+                                  <button
+                                  [routerLink]="['/promotion-calendar']"
+                                    class="btn btn-xs tableicon bluclr btn-view-hover"
+                                    data-title="Edit"
+                                    data-toggle="modal"
+                                    data-target="#edit"
+                                  >
+                                    <i
+                                      class="fa fa-external-link fa-lg custom-link"
+                                      aria-hidden="true"
+                                    ></i>
+                                  </button>
+                                </div>
+                              </div>
+                              <!--Each-Item-->
+                              <!--Each-Item-->
+                              <!-- <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted">
+                                    <h6 class="mr-2 mb-0">New Family Pack</h6>
+                                  </div>
+                                </div>
+                                <div class="d-flex">
+                                  <a href="#!" class="pl-3 py-2"
+                                    ><i
+                                      class="fa fa-external-link fa-lg custom-link custom-link"
+                                      aria-hidden="true"
+                                    ></i
+                                  ></a>
+                                </div>
+                              </div> -->
+                              <!--Each-Item-->
+                              <!--Each-Item-->
+                              <!-- <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted">
+                                    <h6 class="mr-2 mb-0">Buy 1 Get 2</h6>
+                                  </div>
+                                </div>
+                                <div class="d-flex">
+                                  <a href="#!" class="pl-3 py-2"
+                                    ><i
+                                      class="fa fa-external-link fa-lg custom-link custom-link"
+                                      aria-hidden="true"
+                                    ></i
+                                  ></a>
+                                </div>
+                              </div> -->
+                              <!--Each-Item-->
+                            </div>
+                          </div>
+                          <!-- End Upcomming Promotions -->
+                          <!-- Upcomming Promotions -->
+                          <div class="new-today">
+                            <a href="/forecast-exceptions" class="py-2 text-dark w-100"
+                            >
+                          
+                            <div class="d-flex justify-content-between border-bottom">
+                              <h6 class="font-weight-bold mb-1"><b>Top Exceptions</b>
+                               </h6>
+                            </div>
+                          </a>
+                            <!--New-Today-Items-->
+                            <div
+                              class="new-today-items pt-1"
+                             
+                            >
+                              <!--Each-Item-->
+                              <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted d-flex align-items-center">
+                                    <h6 class="mr-2 mb-0">
+                                     code
+                                    </h6>
+                                   
+                                    <!-- <h6 class="=mr-2 mb-0"> {{forecastException.exceptionTypeName}} </h6> -->
+                                  </div>
+                                </div>
+                                <div class="d-flex">
+                                  <button
+                                    [routerLink]="[
+                                      '/forecast-exceptions',
+                                     
+                                      'view'
+                                    ]"
+                                    class="btn btn-xs tableicon bluclr btn-view-hover"
+                                    data-title="Edit"
+                                    data-toggle="modal"
+                                    data-target="#edit"
+                                  >
+                                    <i
+                                      class="fa fa-external-link fa-lg custom-link"
+                                      aria-hidden="true"
+                                    ></i>
+                                  </button>
+                                </div>
+                              </div>
+                              <!--Each-Item-->
+                              <!--Each-Item-->
+                              <!-- <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted">
+                                    <h6 class="mr-2 mb-0">New Family Pack</h6>
+                                  </div>
+                                </div>
+                                <div class="d-flex">
+                                  <a href="#!" class="pl-3 py-2"
+                                    ><i
+                                      class="fa fa-external-link fa-lg custom-link custom-link"
+                                      aria-hidden="true"
+                                    ></i
+                                  ></a>
+                                </div>
+                              </div> -->
+                              <!--Each-Item-->
+                              <!--Each-Item-->
+                              <!-- <div class="d-flex new-today-item">
+                                <div class="comp-data">
+                                  <div class="media text-muted">
+                                    <h6 class="mr-2 mb-0">Buy 1 Get 2</h6>
+                                  </div>
+                                </div>
+                                <div class="d-flex">
+                                  <a href="#!" class="pl-3 py-2"
+                                    ><i
+                                      class="fa fa-external-link fa-lg custom-link custom-link"
+                                      aria-hidden="true"
+                                    ></i
+                                  ></a>
+                                </div>
+                              </div> -->
+                              <!--Each-Item-->
+                            </div>
+                          </div>
+                          <!-- End Upcomming Promotions -->
                         </div>
+                      </div>
 
 
-                    </div>
+                  </div>
 
 
 
 
 
-                </div>
-                <!--Page Content-->
-
-                <!-- End DataTales Start -->
-
+              </div>
+               </div>
             </div>
             <!--End container Fluid-->
         </main>
